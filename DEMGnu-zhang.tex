@@ -1,0 +1,1311 @@
+%\documentclass[twocolumn,amsmath,amssymb,floatfix,groupedaddress,nofootinbib]{revtex4-1}
+\documentclass[aps,prd,nofootinbib,amsmath,amssymb,twocolumn,superscriptaddress,10pt]{revtex4}%superscriptaddress,showpacs,
+
+\pdfoutput=1
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage[colorlinks=true, linkcolor=red, citecolor=blue]{hyperref}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+
+\DeclareMathOperator{\sgn}{sgn}
+
+\def\red#1{{\textcolor{red}{#1}}} % red color
+\definecolor{darkgreen}{cmyk}{0.85,0.2,1.00,0.2}
+\definecolor{purple}{cmyk}{0.5,1.0,0,0}
+\newcommand{\update}[1]{\textcolor{purple}{#1}}
+%\newcommand{\cora}[1]{\textcolor{red}{[{\bf CD}: #1]}}
+%\newcommand{\wh}[1]{\textcolor{blue}{[{\bf WH}: #1]}}
+%\newcommand{\mw}[1]{\textcolor{darkgreen}{[{\bf MW}: #1]}}
+%\newcommand{\dhr}[1]{\textcolor{BurntOrange}{[{\bf DR}: #1]}}
+
+\newcommand{\LCDM}{$\Lambda$CDM}
+\newcommand{\ILCDM}{I$\Lambda$CDM}
+\newcommand{\wCDM}{$w$CDM model}
+\newcommand{\Om}{$\Omega_m$}
+\newcommand{\Oc}{$\Omega_c$}
+\newcommand{\hub}{$H_{0}$} 	
+\def\neff{$N_{\rm eff}$}
+\def\dneff{$\Delta N_{\rm eff}$}
+\def\msum{$\sum m_\nu$}
+\def\mnu{$m_\nu$}
+\def\fr{$f(R)$}
+
+
+\def\mact{active mass model}
+\def\mst{massive sterile model}
+
+\def\({\left(}
+\def\){\right)}
+\def\half{{1\over2}}
+
+
+
+\begin{document}
+
+\title{Dark energy versus modified gravity: Impacts on measuring neutrino mass}
+
+\author{Ming-Ming Zhao}
+\affiliation{Department of Physics, College of Sciences,
+Northeastern University, Shenyang 110819, China}
+\author{Rui-Yun Guo}
+\affiliation{Department of Physics, College of Sciences,
+Northeastern University, Shenyang 110819, China}
+\author{Dong-Ze He}
+\affiliation{Department of Physics, College of Sciences,
+Northeastern University, Shenyang 110819, China}
+\author{Jing-Fei Zhang}
+\affiliation{Department of Physics, College of Sciences,
+Northeastern University, Shenyang 110819, China}
+\author{Xin Zhang\footnote{Corresponding author}}
+\email{zhangxin@mail.neu.edu.cn}
+\affiliation{Department of Physics, College of Sciences,
+Northeastern University, Shenyang 110819, China}
+\affiliation{Ministry of Education Key Laboratory of Data Analytics and Optimization
+for Smart Industry, Northeastern University, Shenyang 110819, China}
+\affiliation{Center for High Energy Physics, Peking University, Beijing 100080, China}
+
+
+
+\begin{abstract}
+In this paper, we make a comparison for the impacts of smooth dynamical dark energy, modified gravity, and interacting dark energy on the cosmological constraints on the total mass of active neutrinos. For definiteness, we consider the \LCDM\ model, the $w$CDM model, the $f(R)$ model, and two typical interacting vacuum energy models, i.e., the \ILCDM1 model with $Q=\beta H\rho_{\rm c}$ and the \ILCDM2 model with $Q=\beta H\rho_{\Lambda}$. In the cosmological fits, we use the Planck 2015 temperature and polarization data, in combination with other low-redshift observations including the baryon acoustic oscillations, the type Ia supernovae, the Hubble constant measurement, and the large-scale structure observations, such as the weak lensing as well as the redshift-space distortion. Besides, the Planck lensing measurement is also employed in this work. We find that, the $w$CDM model favors a higher upper limit on the neutrino mass compared to the $\Lambda$CDM model, while the upper limit in the $f(R)$ model is similar with that of $\Lambda$CDM model.
+For the interacting vacuum energy models, the \ILCDM1 model favors a higher upper limit on neutrino mass, while the \ILCDM2 model favors an identical neutrino mass with the case of $\Lambda$CDM.
+
+%We also find that, for the correlations between the model parameters and the neutrino mass, only when the model parameter is correlated with the neutrino mass, the model would have a significant influence on the measurement of the neutrino mass, otherwise the values of the neutrino mass are largely consistent with that given by $\Lambda$CDM cosmology.}
+
+\end{abstract}
+
+\pacs{95.36.+x, 98.80.Es, 98.80.-k} \maketitle
+\section{Introduction}
+Neutrino oscillation phenomena {has indicated} that the neutrinos have {nonzero} masses (see Ref.~\cite{Lesgourgues:2006nd} for a review). {However, it is} a great challenge for laboratory experiments of particle physics to measure the absolute neutrino mass scale. The neutrino oscillation experiments can only provide the information about the squared mass differences between the neutrino mass eigenstates \cite{PDG2015-neutrino}, which leads to a lower limit on the species-summed neutrino mass of $\sim 0.06$ eV. Though the tritium beta decay experiments are potentially capable of directly measuring the neutrino mass, the current best upper bound is still weak: $m_\beta<2.3$ eV at 95\% confidence level (C.L.) \cite{beta2,beta1}, where $m_\beta$ is the mass to which the beta decay experiments are sensitive. {The future beta decay experiment, Karlsruhe Tritium Neutrino Experiment} (KATRIN), aims to measure $m_\beta$ with a sensitivity of 0.2 eV \cite{Wolf:2008hf}, which would provide the limit {on the total neutrino mass} $\sum m_\nu\lesssim 0.6$ eV. Additionally, the future experiments for detecting cosmic relic neutrinos, such as the PTOLEMY proposal~\cite{Betts:2013uya,Zhang:2015wua,Huang:2016qmh,Zhang:2017ljh}, are also able to measure the absolute masses of neutrinos. {Currently, the strong constraints on neutrino masses are actually offered by the cosmological observations} (see, e.g., Refs.~\cite{Ade:2013zuv,Ade:2015xua} and references therein).
+
+Actually, the cosmological constraints on the total neutrino mass $\sum m_\nu$ (summed over the three active neutrino species) largely depend on the choices of cosmological models and observational datasets. Massive neutrinos can affect the cosmological expansion rate, and also can lead to a large free-streaming scale (due to their large thermal velocity) below which the clustering amplitude is suppressed. Thus, the observations of cosmic microwave background (CMB) and large-scale structure (LSS) could be used to constrain the neutrino mass. If the total neutrino mass would exceed the limit $\sum m_\nu \lesssim 1.8$ eV, then the CMB observations alone could tightly constrain $\sum m_\nu$ \cite{Dodelson:1995es,Ichikawa:2004zi}. In order to go beyond this limit, one needs to consider more subtle effects of massive neutrinos on the CMB anisotropies, and needs to combine the CMB data with other low-redshift cosmological probes.
+
+
+%The $\Lambda$ cold dark matter ($\Lambda$CDM) model can fit various astronomical observations quite well.
+The {\it Planck} satellite mission has provided extremely accurate measurements of the CMB anisotropies, with which the spatially flat $\Lambda$CDM cosmology is shown to be highly consistent \cite{Ade:2013zuv,Ade:2015xua}. Based on the standard $\Lambda$CDM model, the Planck 2015 temperature and polarization power spectra in combination with the low-$\ell$ temperature-polarization data (denoted as ``lowP''), gave a better constraint on the species-summed mass of neutrinos: $\sum m_\nu<0.49$ eV (Planck TT,TE,EE + lowP) \cite{Ade:2015xua}. When the baryon acoustic oscillation (BAO) data was added, the limit became much tighter: $\sum m_\nu<0.17$ eV (Planck TT,TE,EE + lowP + BAO) \cite{Ade:2015xua}. When further considering the redshift space distortion (RSD) measurement of LSS from the DR12 galaxy samples in the data combination, the constraint of the neutrino mass was still consistent with the previous results: $\sum m_\nu<0.16$ eV (Planck TT,TE,EE + lowP + BAO + RSD) \cite{Alam:2016hwk}. However, if replacing the RSD data with the galaxy weak lensing from Dark Energy Survey Year 1 (DESY1) combined with the type Ia supernova (SN) measurement, the constraint of neutrino mass would be pulled towards a higher value, which was confirmed by the result in Ref.~\cite{Abbott:2017wau}: $\sum m_\nu<0.29$ eV (Planck TT+BAO+SN+DESY1). Note here that all the upper limit values for neutrino mass quoted in this paper refer to the $95\%$ confidence level (C.L.). 
+
+In addition to the dependence of cosmological observational datasets, the measurement of neutrino mass in cosmology also significantly depends on the {assumptions} of cosmological models. Recently, a number of investigations about weighing neutrinos in different dark energy models using cosmological observations have been performed. {In light of these studies \cite{Zhao:2016ecj,Vagnozzi:2018jhn,Zhang:2015uhk,Chen:2015oga,Zhang:2015rha,Zhao:2017urm,Feng:2017mfs}, some essential conclusions are drawn and summarized} in Ref.~\cite{Zhang:2017rbg}: (1) In the dynamical dark energy models, {compared to the $\Lambda$CDM case, the upper limit of $\sum m_\nu$ could become either larger or smaller}, depending on the nature of dark energy. It is found that, in the cases of a phantom dark energy or an early phantom dark energy (i.e., $w<-1$ in the early cosmic times), the constraint on $\sum m_\nu$ becomes looser, but in the cases of a quintessence dark energy or an early quintessence dark energy (i.e., $-1<w<-{1}/{3}$ in the early cosmic times), the constraint on $\sum m_\nu$ becomes tighter. (2) In the holographic dark energy (HDE) model \cite{Li:2004rb,hde2,Zhang:2006qu,Zhang:2005hs,Chang:2005ph,Zhang:2006av,Zhang:2007sh,Zhang:2007an,Zhang:2007es,Ma:2007av,Zhang:2014ija}, one gets the tightest constraint on the neutrino mass, namely $\sum m_\nu<0.105$ eV, which is almost equal to the lower bound of $\sum m_\nu$ for the inverted hierarchy case. (3) The mass splitting of neutrinos {is able to} influence the cosmological fits. Moreover, the normal hierarchy case can fit the current observations slightly better than the inverted hierarchy case, which is independent of dark energy models. Of course, these statements still need to be further carefully checked in the upcoming future.
+
+
+
+In fact, while the acceleration of the cosmic expansion was discovered by the {observations of type Ia supernovae} and was {further} confirmed by {a series of} other independent astronomical/astrophysical observations, the physics behind this {counterintuitive phenomenon} is still obscure (see Ref.~\cite{Mortonson:2013zfa} for a brief review). If the general relativity (GR) is valid on all the scales in the universe, one needs to introduce a new form of {perfect fluid} whose pressure is negative (yielding a repulsive gravity), referred to as ``dark energy'' (DE), to account for the origin of the cosmic acceleration. {Particularly, the cosmological constant $\Lambda$ (vacuum energy) with $w=-1$ (here, $w$ is the equation-of-state parameter defined by $w=p/\rho$) is the physically simplest candidate for DE. Although favored by the observations, it always suffers from the fine-tuning and coincidence problems. To solve or alleviate these theoretical puzzles, many other possible theoretical models have been proposed. For example, the spatially homogeneous, slowly rolling scalar field, dubbed ``quintessence'', provides a possible mechanism for dynamical dark energy}. Nevertheless, there also exists another possibility that GR would be violated on the cosmological scales, which leads to a special approach to explain the accelerated cosmic expansion through modifying the gravity (see, e.g., Refs.~\cite{Sotiriou:2008rp,DeFelice:2010aj,Clifton:2011jh,Weinberg:2012es,Joyce:2014kja} for recent reviews). In other words, the modified gravity (MG) theory could mimic the  {``effective dark energy'' at the cosmological background level to drive the cosmic acceleration}. One typical example for MG is to replace the Ricci scalar $R$ with a function $R+f(R)$ in the gravitational action \cite{Carroll:2003wy}. {Moreover, a more radical idea to construct MG is to introduce the extra dimensions in braneworld theories, allowing gravitons to ``leak'' off the brane that represents our observable universe} (e.g., the DGP model \cite{DGP}), which has inspired a more general class of ``galileon'' and massive gravity models.
+
+
+{Within the framework of GR}, the histories of cosmic structure growth and cosmic expansion are linked by a consistency relation, $\ddot{D}+2H\dot{D}-4\pi G \rho_{\rm m} D=0$, where $D(z)$ is the linear growth function, $H(z)$ is the Hubble expansion rate, and $G$ is the Newton's gravitational constant. MG models can change the predicted linear growth function, and typically make the growth function dependent on the scale or environment, i.e., $D(z,k)$. Thus, {the violation of consistency relation for GR would occur in the MG models, leading to the consequence that the growth index $\gamma$ deviates from its GR value}, $\gamma\approx 0.55$ \cite{Wang:1998gt,Linder:2005in}. In addition, the MG models can typically yield a non-vanishing anisotropic stress (proportional to $\Phi-\Psi$, where $\Phi$ and $\Psi$ are two gauge invariant potentials describing the scalar metric perturbations).
+
+{Now that the determination of neutrino mass depends on the DE models in cosmology, it is of great interest to quantify the impacts of the DE models explaining the cosmic acceleration with various theoretical motivations (dark energy and modified gravity) on the constraint results of \msum. As there are too many seemingly reasonable models of DE and MG resulting from multiple physical considerations, it is of course not possible and necessary to exhaust all the models in this work. For simplicity, we only choose the most typical (or simplest) models as the examples to do the analysis. For the smooth dynamical dark energy, we consider the $w$CDM model that modifies the background equations of cosmological constant but yields a similar structure growth history to the $\Lambda$CDM model \cite{Linder:2005in}. For the modified gravity, we consider a parameterized $f(R)$ model whose background is fixed as that of the $\Lambda$CDM model, with the perturbations parameterized by $B_0$ that characterizes the Compton wavelength scale for the extra scalar degree of freedom} \cite{Song:2006ej} (see also Refs.~\cite{Bertschinger:2008zb,Giannantonio:2009gi,Li:2015fR}). 
+%In this paper, we do this analysis with several data combinations of current astronomical observations.
+% Therefore, it is very meaningful to compare the results in the $\Lambda$CDM, $w$CDM, and $f(R)$ models.
+% The viable $f(R)$ models (with the consideration of screening mechanism to pass the local solar system tests) are forced by observational constraints to be very close to $\Lambda$CDM in background (expansion history), but they still can have different growth of structure history from $\Lambda$CDM \cite{Zhang:2007nk}.
+
+
+{However, it must be pointed out that there is another class of DE model, in which some subtle direct interaction exists between dark energy and cold dark matter, called interacting dark energy (IDE) model} \cite{Amendola:1999er,Zimdahl:2005bk,Wang:2006qw,Guo:2007zk,Koyama:2009gd,Wei:2010cs,He:2010im,Li:2011ga,Zhang:2012uu,Zhang:2013lea,Li:2013bya,Geng:2015ara,Murgia:2016ccp,Wang:2016lxa,Pourtsidou:2016ico,Feng:2016djj,Xia:2016vnp,Costa:2016tpb,vandeBruck:2016hpz,Kumar:2017dnp,Sola:2017jbl,Zhang:2005rg,Zhang:2005rj,Zhang:2004gc,Zhang:2007uh,Li:2009zs,Zhang:2009qa,Wang:2014oga,Guo:2017deu,Li:2017usw}. This scenario is different from MG in that the so called ``fifth force'' only exists between dark energy and cold dark matter. Usually, in the scenario of IDE, both of the histories of cosmic expansion and the growth of structure differ from the \LCDM\ universe. {What is important is that the models of IDE can successfully resolve (or alleviate) the fine-tuning and coincidence problems through the attractor solution}. Recently, some works related to the constraints on the total neutrino mass in the IDE models using current cosmological observations have been done~\cite{Guo:2017hea,Guo:2018gyo}. {In the present work, we as well take the IDE scenario into consideration so as to make the research more general and comprehensive. In order to introduce the fewest parameters}, we only consider the simplest model of IDE, i.e., the interacting vacuum energy model, in which the interaction between vacuum energy and cold dark matter is assumed. {For convenience, we call this kind of IDE model the I$\Lambda$CDM model, although the vacuum energy density is no longer a pure background in this scenario. We consider another two cases of energy transfer rate, $Q=\beta H\rho_{\Lambda}$ and $Q=\beta H\rho_{\rm c}$, with $\rho_{\Lambda}$ the energy density of vacuum energy and $\rho_{c}$ the energy density of cold dark matter}. {In this work, we aim to investigate how the cosmological constraints on the sum of the neutrino masses are affected by the assumptions of the underlying scenarios accounting for the cosmic accelerated expansion, i.e., the $\Lambda$CDM, $w$CDM, $f(R)$, and I$\Lambda$CDM models.}
+% But different from MG, in the IDE scenario the growth of structure is still scale-independent.
+% and thus it is no longer a pure background
+
+The rest of this paper is organized as follows: In Sec.~\ref{model}, we will briefly describe the cosmological models considered in this work. In Sec.~\ref{data}, we will introduce the analysis method and observational data employed in this work. In Sec.~\ref{sec:results}, we will report the constraint results in the various cosmological models and make some relevant discussions.  The conclusion will be given in Sec.~\ref{sec:discussion}.
+
+
+
+
+\section{Model}\label{model}
+
+In this section, we shall briefly describe the cosmological models considered in this work, namely the $w$CDM model, the $f(R)$ model and the I$\Lambda$CDM model. 
+Here we only provide the basic information of them.
+
+
+\subsection{The $w$CDM model}
+
+The $w$CDM model is the simplest extension to the $\Lambda$CDM model, and thus is the {naivest candidate for a dynamical dark energy}, in which {one assumes that the equation-of-state parameter of DE is $w=\rm constant$}. Although it is hard to believe that such a simple model with a constant $w$ would correspond to {the final physical situation of} dark energy, it is still very useful in exploring the nature of dark energy with the cosmological parameter estimation due to its simplicity. In this model, we have
+\begin{equation}\label{equation}
+  E(z)^{2}=\Omega_{\rm m}(1+z)^{3}+(1-\Omega_{\rm m})(1+z)^{3(1+w)},
+\end{equation}
+where $E(z)=H(z)/H_{0}$ and $\Omega_{\rm m}$ is the present-day fractional energy density of matter. The radiation density in the late universe is negligible, and thus we do not show it here.
+
+
+\subsection{The $f(R)$ model}
+
+The $f(R)$ gravity is a simple and nontrivial extension of GR, which has received much attention as an alternative mechanism of $\Lambda$CDM.
+In general, the model of $f(R)$ is derived by adding a function of the Ricci scalar $R$ to the Einstein-Hilbert action \cite{Carroll:2003wy}. 
+
+By this, an extra scalar degree of freedom $f_{R}\equiv df/dR$ is introduced in the cosmological model. We characterize this function using a dimensionless quantity $B$ \cite{Song:2006ej}, which can be written as
+\begin{equation}\label{quantity}
+  B\equiv \frac{f_{RR}}{1+f_{R}}\frac{dR}{d\ln a}(\frac{d \ln H}{d \ln a})^{-1},
+\end{equation}
+where $H$ is the Hubble expansion rate, $a$ is the scale factor, and $f_{RR}$ is the derivative to $f_{R}$ with respect to $R$, i.e., $f_{RR}\equiv d^{2}f/d R^{2}$.
+
+Here, we only consider a parameterized $f(R)$ model whose background is fixed as that of $\Lambda$CDM and perturbations are parameterized by $B_0$ that characterizes the Compton wavelength scale for the extra scalar degree of freedom (see Refs.~\cite{Bertschinger:2008zb,Giannantonio:2009gi,Li:2015fR}),
+\begin{equation}\label{mu}
+\mu(k,a)=\frac{1}{1-1.4\cdot10^{-8}|\lambda_{1}|^{2}a^{3}}\frac{1+4/3\lambda_{1}^{2}k^{2}a^{4}}{1+\lambda_{1}^{2}k^{2}a^{4}},
+\end{equation}
+\begin{equation}\label{gama}
+  \gamma(k,a)=\frac{1+2/3\lambda_{1}^{2}k^{2}a^{4}}{1+4/3\lambda_{1}^{2}k^{2}a^{4}},
+\end{equation}
+where the parameter $\lambda_{1}$ has dimension of length, relating to the $B$ value today through $\lambda_{1}^{2}=B_{0}c^{2}/2H_{0}^{2}$. The usages of the functions $\mu(k,a)$ and $\gamma(k,a)$ in the public {\tt MGcamb} code and the details of how to quantify the modifications to the Poisson and anisotropy equations can be found in Refs.~\cite{Lewis:1999bs,Hojjati:2011ix}.
+
+
+
+\subsection{The I$\Lambda$CDM model}
+
+
+{The I$\Lambda$CDM model is the simplest interacting dark energy model, in which the vacuum energy directly interacts with cold dark matter (i.e., the vacuum energy could decay into cold dark matter or vice versa).}
+
+In this model, the energy continuity equation for the vacuum energy density is given by
+\begin{equation}\label{vacuum}
+  \dot{\rho_{\Lambda}}=Q,
+\end{equation}
+where the dot represents the derivative with respect to the cosmic time $t$, and $Q$ is the energy (density) transfer rate. For the cold dark matter density, the energy continuity equation reads,
+\begin{equation}\label{coldmatter}
+  \dot{\rho_{\rm c}}=-3H\rho_{\rm c}-Q.
+\end{equation}
+
+It should be mentioned that the energy transfer rate $Q$ can only be given by purely phenomenological consideration. {This is because actually we know little about how dark matter perceives the ``fifth force" through the mediation of some unknown scalar field degrees of freedom of dark energy in a realistic physical mechanism}. In this work, we choose two simple phenomenological forms of energy transfer rate, i.e., {$Q=\beta H\rho_{\rm c}$ (for \ILCDM1\ model) and $Q=\beta H\rho_{\Lambda}$ (for \ILCDM2\ model)}, where $\beta$ denotes a dimensionless coupling parameter. From Eqs.~(\ref{vacuum}) and (\ref{coldmatter}), one can easily see that, $\beta>0$ indicates that the energy transfer is from cold dark matter to vacuum energy; {$\beta<0$ represents an inverse energy transfer orientation}; $\beta=0$ indicates that there is no interaction between cold dark matter and vacuum energy and {the model recovers to the standard $\Lambda$CDM universe}.
+
+In a perturbed universe, there is also momentum transfer between vacuum energy and cold dark matter, which leads to the large-scale instability~\cite{Valiviita:2008iv} problem in the I$\Lambda$CDM cosmology. To solve this problem, we adopt the extended version of parameterized post-Freidmann (PPF) approach in which the interacting dark energy models are accommodated. For details about this version of PPF, we refer the reader to Refs.~\cite{Li:2014eha,Li:2014cee,Li:2015vla,Zhang:2017ize,Guo:2017hea,Feng:2017usu,Guo:2018gyo,Feng:2018yew}.
+
+
+
+In this work, {we treat the $\Lambda$CDM model as a reference model. The $w$CDM model, as a representative of smooth dark energy, has the similar history of the growth of structure but different expansion history; the $f(R)$ model, as a representative of MG, has the similar expansion history but different structure growth history; the I$\Lambda$CDM model, as a representative of interacting dark energy, has different evolutionary history of not only cosmic expansion but also structure growth. All of these models have only one additional parameter compared with the $\Lambda$CDM model, i.e., $w$ for the $w$CDM model, $B_0$ (that is replaced by its logarithmic form of $\log_{10}B_{0}$ in calculation, following Ref.~\cite{Dossett:2014oia}) for the $f(R)$ model, and $\beta$ for the two typical I$\Lambda$CDM models. Therefore, it is meaningful and equitable to compare the results of weighing neutrinos in the $\Lambda$CDM, $w$CDM, $f(R)$, and I$\Lambda$CDM models.}
+
+
+
+
+
+\section{method and data}\label{data}
+
+
+The basic cosmological parameters for the 6-parameter {base} $\Lambda$CDM model are $\{{\Omega_{\rm b}h^{2},\Omega_{\rm c}h^{2},\theta_\ast,\tau,A_{\rm s},n_{\rm s}}\}$. These parameters, one by one, represent the energy density of baryons, the energy density of cold dark matter, {the acoustic angular size of the sound horizon at the time of last scattering}, the reionization optical depth, {the power amplitude of the primordial curvature perturbations}, and the tilt of the primordial scalar fluctuations, {respectively}. When the massive neutrinos are considered, the neutrino mass parameter $\sum m_{\nu}$ should also be included in all {the considered} models. Recently, the issue concerning the mass hierarchy of neutrinos has been discussed in  Refs.~\cite{Huang:2015wrx,Wang:2016tsz,Guo:2018gyo,Zhao:2017jma}. But in the present work we do not consider the mass splittings of neutrinos, and thus three mass-degenerate neutrino species are assumed.
+
+
+
+We employ several significant cosmological observational data sets to perform our analysis, which include the cosmic microwave background (CMB) temperature and polarization data, BAO, SN, the Hubble constant ($H_{0}$), the redshift-space distortion (RSD), and the weak lensing (WL) data.
+
+\begin{itemize}
+ \item The CMB data: We use the combination of the Planck 2015 temperature and polarization power spectra at multipoles $\ell>30$ and low-$\ell$ temperature+polarization likelihood \cite{Aghanim:2015xee}.
+ \item The BAO data: We use the combination of the previous measurements from 6dFGS ($z=0.1$) \cite{Beutler:2011hx}, SDSS-MGS ($z=0.15$) \cite{Ross:2014qpa}, and the latest measurements from LOWZ ($z=0.32$) and CMASS ($z=0.57$) DR12 samples of BOSS \cite{Gil-Marin:2015nqa}.
+ \item The SN data: For the type Ia supernova observation, we adopt the ``JLA" sample, compiled from the SNLS, SDSS and the samples of several low-redshift SN data~\cite{Betoule:2014frx}.
+ \item The $H_{0}$ data: We use the former ``$H_{0}~$prior'' from Riess 11 (hereafter R11) data reanalysed by Efstathiou \cite{Efstathiou:2013via}, which is rather consistent with the recent results of $H_{0}$ from the Planck 2015 data \cite{Ade:2015xua}. The consistent measurement value of the Hubble constant is $H_{0}=70.6\pm3.3 ~\rm km  ~s^{-1} ~Mpc^{-1}$.
+ \item The RSD data: We employ two RSD measurements from BOSS CMASS DR12 ($z=0.57$) and LOWZ DR12 ($z=0.32$) samples \cite{Gil-Marin:2016wya}, respectively. The usage of the RSD data is the same as the prescription given by the Planck collaboration \cite{Ade:2015xua}. {Because these two RSD data  include the corresponding BAO information, we do not consider the BAO measurements \cite{Gil-Marin:2015nqa} from the BAO likelihood in the context of employment of the RSD data to avoid double counting}.
+
+ \item The WL data: We use a measurement of $S_{8}=\sigma_{8}(\Omega_{\rm m}/0.3)^{0.5}$, derived by the weak gravitational lensing from the Dark Energy Survey Year 1 (DESY1) survey, with $S_{8}=\sigma_{8}(\Omega_{\rm m}/0.3)^{0.5}=0.783^{+0.021}_{-0.025}$ ($2\sigma$) \cite{Abbott:2017wau}. Since this measurement result is a little non-Gaussian, we simply make it gaussian by taking the average of the error of result {(0.21+0.025)/2}, i.e., $S_{8}=0.783\pm0.023$.
+ \item The lensing data: We also use the CMB lensing power spectrum from the Planck lensing measurement \cite{Ade:2015zua}. We denote the CMB lensing measurement as ``lensing''.
+
+\end{itemize}
+
+
+We employ the {\tt CosmoMC} package \cite{Lewis:2002ah} to infer the posterior probability distributions of parameters. {We utilize flat priors for the basic cosmological parameters, and the prior ranges for the parameters are set to be much wider than the posterior in order not to affect the results of parameter estimation.}  We also employ the {\tt MGcamb} code \cite{Lewis:1999bs,Hojjati:2011ix} {in particular} to do the calculations for the $f(R)$ model. 
+
+
+
+
+\section{Results}\label{sec:results}
+
+
+\subsection{Neutrino mass}
+
+We constrain the total mass of neutrinos in the models of $w$CDM, $f(R)$, I$\Lambda$CDM1 ($Q=\beta H\rho_{\rm c}$), and I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) by using the data combination of CMB+BAO+SN+$H_{0}$+WL+RSD+lensing. {Note here that for the employment of ``$H_{0}$ prior", we do not adopt the local determination of the Hubble constant ($H_{0}=73.00\pm1.75 ~\rm km  ~s^{-1} ~Mpc^{-1}$) by Reiss {et al}. \cite{Riess:2016jrr} for two causes: (1) There exists beyond $3\sigma$ tension with Planck measurement, and (2) a higher $H_{0}$ prior is more prone to derive a smaller $\sum m_{\nu}$ due to the strong anti-correlation between $H_{0}$ and $\sum m_{\nu}$. Hence, we choose a relatively lower prior of $H_{0}$ re-analyzed by Efstathiou \cite{Efstathiou:2013via}, $H_{0}=70.6\pm3.3 ~\rm km  ~s^{-1} ~Mpc^{-1}$, which is well consistent with Planck measurement. To visually show the impacts of these theoretical models on the constraints of the neutrino mass, we plot the one-dimensional joint, marginalized distributions of $\sum m_{\nu}$ for the $\Lambda$CDM model (red solid line), the $w$CDM model (green dashed line), the $f(R)$ model (blue dashed-dotted line), the I$\Lambda$CDM1 model (purple dotted line), and the I$\Lambda$CDM2 model (yellow solid line) one by one, as shown in Fig.~\ref{fig:mnu}. We also exhibit the detailed results in Table~\ref{tab1}.}
+
+
+{In this work we take the $\Lambda$CDM model as a reference model. In the $\Lambda$CDM model, the 95\% upper limit on the sum of the neutrino masses, $\sum m_{\nu}<0.22$ eV, is obtained.
+Importantly, we are supposed to pay special attention to the constraints on the neutrino mass in other DE and MG models. As shown in Table~\ref{tab1}, for the $w$CDM model, the upper limit $\sum m_{\nu}<0.33$ eV is obtained. For the I$\Lambda$CDM1 model and the I$\Lambda$CDM2 model, the upper limits of $\sum m_{\nu}<0.37$ eV and $\sum m_{\nu}<0.22$ eV, are obtained. For the $f(R)$ model, the upper limit $\sum m_{\nu}<0.20$ eV is obtained. For these results, as vividly displayed in Fig.~\ref{fig:mnu}, we can obviously find that the $w$CDM model and the I$\Lambda$CDM1 model could pull the upper limit on neutrino mass away from the case of the $\Lambda$CDM model, towards a higher value. Nevertheless, the I$\Lambda$CDM2 model and $f(R)$ model indicate the approximately equal upper limits on the neutrino mass to the case of the $\Lambda$CDM model. Thus, according to the fitting results, we can conclude that some models considered in this work can impose a significant influence on weighing neutrinos, such as the $w$CDM model and the I$\Lambda$CDM1 ($Q=\beta H\rho_{\rm c}$) model, but the other models can only exert a marginal impact on weighing neutrinos, such as the I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) model and the $f(R)$ model.}
+
+%For the $f(R)$ model, the obtained neutrino mass upper limit, $\sum m_{\nu}<0.20$ eV, is slightly tighter than that in the $\Lambda$CDM model. In fact, such a result is consistent with the case of $\Lambda$CDM to some extent.
+
+
+%\update{That is what an interesting finding, since there is actually a positive preference for non-zero neutrino mass in many modified gravity models, see e.g. \cite{Renk:2017rzu} for the case of Galileon gravity and \cite{Geng:2014yoa} for the case of viable $f(R)$. Much of these chosen $f(R)$ models are engineered to match the $\Lambda$CDM background expansion and to carry out a investigation of neutrino mass with changed structure growth. Taking Ref.~\cite{Geng:2014yoa} for example, in their conclusion, as a result, the modified $f(R)$ gravity theory such as the Starobinsky model would be used to compensate the suppression from the effect of massive neutrinos on the matter power spectrum. In other word, this type of the viable $f(R)$ gravity theory would enhance the matter power spectrum and thus allow a greater scale of the total neutrino mass than $\Lambda$CDM.}
+
+%\update{However, the enhancement of the matter power spectrum is not generally robust for modified gravity models so that it will favor a large neutrino mass. In this paper, we consider a special $f(R)$ model where the background evolutions same as the $\Lambda$CDM cosmology is similarly assumed, and its perturbations are parametrized by a dimensionless quantity $B_{0}$, a special form different from other $f(R)$ models~\cite{Song:2006ej}. As results showed by Ref.~\cite{Song:2006ej} and Ref.~\cite{Li:2015fR}, while $B_{0}$ was just in the scale interval $0.0001\lesssim B_{0}\lesssim0.1$ or $\log_{10}B_{0}$ in the interval $-1\lesssim \log_{10}B_{0}\lesssim-4$, no matter the matter power spectrum or the growth rate of structure would be obviously enhanced, compared to one predicted by $\Lambda$CDM. In our work, we constrain $\log_{10}B_{0}$ with current cosmological observations, and obtain a result of $\log_{10}B_{0}<-5.67$. Accordingly, this value is beyond the range that the matter power spectrum is enhanced, which means that the matter power spectrum is less changed by the $f(R)$ model. Therefore, it is believable that under this case the limit of the neutrino mass is consistent with $\Lambda$CDM to some extent, and also is lower than the above mentioned other $f(R)$ models.}
+
+%\update{For the interacting vacuum energy models, we see that for the I$\Lambda$CDM2 model, the neutrino mass limit actually appears to be consistent with that the $\Lambda$CDM one, while it doesn't occur for the I$\Lambda$CDM1 model. The former looks like being caused by limitedly functional perturbation such as that the $f(R)$ one, and the latter is more like that result from the changed dark energy density, e.g. that $w$CDM one. It is so attractive to understand why these are cases. To work out these results, it is necessary to investigate how treating I$\Lambda$CDM cosmology determines the measurement of the neutrino mass. We put studies on I$\Lambda$CDM respect to massive neutrinos in Sec.~\ref{cosmologymodel}, compared to other two extended models.}
+
+
+In addition, we also compare the constraint results of other late-time cosmological parameters strongly correlated with the neutrino mass in these cosmologies. Fig.~\ref{fig:mnu-om-sig-h0} shows the 68\% C.L. and 95\% C.L. constraints on neutrino mass $\sum m_{\nu}$ plus the late-time parameters $H_{0}$, $\Omega_{\rm m}$, and $\sigma_{8}$ for the considered five models respectively. {We find that the best fit values of $H_{0}$, $\Omega_{\rm m}$, and $\sigma_{8}$, as well as the derived correlations between the neutrino mass and the late-time parameters are roughly consistent in these five models.}
+However, the parameter space distributions of the late-time parameters are greatly different. It is found that compared with the $\Lambda$CDM model, the $w$CDM model and the I$\Lambda$CDM1 model yield rather broad distributions of $H_{0}$ in the $H_{0}-\sum m_{\nu}$ plane. Besides, in the $\Omega_{\rm m}-\sum m_{\nu}$ plane and the $\sigma_{8}-\sum m_{\nu}$ plane, the I$\Lambda$CDM2 model can yield broader distributions of $\Omega_{\rm m}$ and $\sigma_{8}$ compared with the other models. Moreover, it is of interest to notice that the constraints of these parameters for $f(R)$ are highly consistent with the case of $\Lambda$CDM. 
+%Undoubtedly, in the extensions of $\Lambda$CDM cosmology, the extra parameters can play an important role in affecting the distributions of these parameters including the neutrino mass.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.8, angle=0]{mnu-1D.pdf}
+\caption{One-dimensional joint, marginalized distributions of $\sum m_{\nu}$ for the $\Lambda$CDM model (red solid), the $w$CDM model (green dashed), the $f(R)$ model (blue dashed-dotted), the I$\Lambda$CDM1 ($Q=\beta H\rho_{\rm c}$) model (purple dotted), and the I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) model (yellow solid) from the constraints of the CMB+BAO+SN+$H_{0}$+WL+RSD+lensing data combination.}
+\label{fig:mnu}
+\end{center}
+\end{figure}
+
+\begin{table*}
+\caption{\label{tab1} Fitting results for the $\Lambda$CDM, $w$CDM, $f(R)$, I$\Lambda$CDM1 ($Q=\beta H\rho_{\rm c}$) and I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) {models} with the CMB+BAO+SN+$H_{0}$+WL+RSD+lensing data combination. Here, we fix $N_{\rm eff}=3.046$. We quote the $\pm 1\sigma$ errors, but for the neutrino mass $\sum m_{\nu}$ and $\log_{10}B_{0}$, we quote the 95\% C.L. upper limits.}
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{cccccccccc}\hline\hline
+ Model&$\Lambda$CDM&$w$CDM&$f(R)$&I$\Lambda$CDM1 &I$\Lambda$CDM2 \\
+\hline
+$\Omega_{\rm b}h^2$&$0.02235\pm0.00014$&$0.02233^{+0.00015}_{-0.00014}$&$0.02234\pm0.00014$&$0.02222\pm0.00018$&$0.02234\pm0.00014$\\
+$\Omega_{\rm c}h^2$&$0.1180\pm0.0010$&$0.1181\pm0.0012$&$0.1180^{+0.0010}_{-0.0011}$&$0.1166^{+0.0018}_{-0.0016}$&$0.1160^{+0.0110}_{-0.0130}$\\
+$100\theta_{\rm MC}$&$1.04093\pm0.00030$&$1.04089^{+0.00031}_{-0.00030}$&$1.04092\pm0.00029$&$67.94\pm0.70$&$67.68^{+0.69}_{-0.60}$\\
+$\tau$&$0.066^{+0.014}_{-0.016}$&$0.067^{+0.016}_{-0.017}$&$0.063^{+0.014}_{-0.016}$&$0.073^{+0.018}_{-0.020}$&$0.065^{+0.015}_{-0.017}$\\
+$n_{\rm s}$&$0.9681\pm0.0041$&$0.9676\pm0.0043$&$0.9678^{+0.0041}_{-0.0040}$&$0.9690\pm0.0043$&$0.9678\pm0.0042$\\
+${\rm{ln}}(10^{10}A_{\rm s})$&$3.061^{+0.027}_{-0.031}$&$3.065^{+0.029}_{-0.032}$&$3.057^{+0.026}_{-0.030}$&$3.077^{+0.034}_{-0.039}$&$3.060^{+0.028}_{-0.032}$\\
+$w$/$\log_{10}B_{0}$/$\beta$&$-$&$-1.042^{+0.071}_{-0.024}$&$<-5.67$&$0.0018\pm0.0002$&$0.0175^{+0.1231}_{-0.1133}$\\
+$\sum m_\nu$ [eV]&$<0.22$&$<0.33$&$<0.20$&$<0.37$&$<0.22$\\
+$\Omega_{\rm m}$&$0.3082^{+0.0072}_{-0.0079}$&$0.3076^{+0.0083}_{-0.0082}$&$0.3075^{+0.0067}_{-0.0077}$&$0.3051\pm0.0085$&$0.3050^{+0.0250}_{-0.0280}$\\
+$H_0$ [km s$^{-1}$ Mpc$^{-1}$] &$67.74^{+0.65}_{-0.59}$&$67.96\pm0.86$&$67.81^{+0.63}_{-0.54}$&$67.94\pm0.70$&$67.68^{+0.69}_{-0.60}$\\
+$\sigma_8$&$0.804^{+0.013}_{-0.011}$&$0.802^{+0.014}_{-0.013}$&$0.806^{+0.012}_{-0.011}$&$0.803^{+0.015}_{-0.013}$&$0.806^{+0.021}_{-0.019}$\\
+\hline\hline
+\end{tabular}
+\end{table*}
+
+\begin{figure*}
+\begin{center}
+\includegraphics[scale=0.6, angle=0]{mnu-om-sig-h0-182.pdf}
+\caption{The 68\% and 95\% C.L. contours in the parameter planes of $\sum m_{\nu}$ versus $H_{0}$, $\Omega_{\rm m}$ and $\sigma_{8}$ for the $\Lambda$CDM model, the $w$CDM model, the $f(R)$ model, the I$\Lambda$CDM1 ($Q=\beta H\rho_{\rm c}$) model, and the I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) model from the constraints of the CMB+BAO+SN+$H_{0}$+WL+RSD+lensing data combination.}
+\label{fig:mnu-om-sig-h0}
+\end{center}
+\end{figure*}
+
+
+
+\subsection{Model parameter}\label{cosmologymodel}
+
+In the last subsection, we have found that the $w$CDM, $f(R)$, and I$\Lambda$CDM models possess different effects on the cosmological constraints of neutrino mass. In order to investigate how these models affect the constraints of the neutrino mass, in Fig.~\ref{fig:all-mnu} we plot the two-dimensional posterior distribution contours of the specific model parameters and the neutrino mass in the $w-\sum m_{\nu}$ plane for $w$CDM model, in the $\log_{10}B_{0}-\sum m_{\nu}$ plane for $f(R)$ model, and in the $\beta-\sum m_{\nu}$ plane for I$\Lambda$CDM1 and I$\Lambda$CDM2 models. 
+
+%\update{Firstly, for the apparent correlations between the model parameter and the neutrino mass, in $w$CDM, for example, $w$ anti-correlated with $\sum m_{\nu}$, it can be explained by their mild effects on the shape of the CMB power spectra. The effect on the background cosmology can be compensated by each other, to ensure the fixed acoustic angular scale $\theta_{*}$. In detail, for the $w$CDM model, changes in the dark energy density due to their dynamical properties change the expansion rate of universe and hence angular diameter distance $D_{\rm A}$ ($D_{\rm A}\propto 1/\theta_{*}$), which could be compensated by shifts in the neutrino mass.}
+
+%\update{Then, as if the effects of the model parameter on the background cosmology and the neutrino mass and compensation by each other similarly occurs in the I$\Lambda$CDM1 cosmology at the same time. We consider the interaction with a simple form of $Q=3\beta H\rho_{c}$ for I$\Lambda$CDM1, to have a cosmological constraint on neutrino mass with current mainstream observations. We find in surprise that $\beta$ is positively correlated with $\sum m_{\nu}$, and it allows a positive non-zero neutrino mass. As we know, the main measurement of the neutrino mass largely depends on their effects on the background expansion, and thus there are also $H_{0}$ distinctly correlated with $\sum m_{\nu}$ for all cosmologies or $w$ correlated with $\sum m_{\nu}$ for $w$CDM except realizing the mass scale. By that analogy, for our result, I$\Lambda$CDM1 favors a large neutrino mass, compared to $\Lambda$CDM, which mostly results from the changes in the expansion history by the interaction of the $Q=3\beta H\rho_{c}$ form.}
+
+%\update{Recall that earlier, we mentioned that in the vacuum energy scenario, considering interaction between vacuum energy and cold dark matter  would lead the vacuum energy to be not pure anymore, and the perturbed universe to contain a momentum transfer. However, what specific changes in the background and perturbation universe are not clear, because they are greatly determined by the interaction form. In this work, when the interaction is deal with being proportional to $\rho_{c}$, it is shown that this interaction form can alter the vacuum energy density and thereby affect the expansion rate at the late time of universe. To compensate the changed expansion rate, large neutrino mass is required as a consequence.}
+
+%\update{However, the above case doesn't appear in another interacting vacuum energy model, i.e., the I$\Lambda$CDM2 model. In the I$\Lambda$CDM2 model, we consider the interaction of the $Q=3\beta H\rho_{\Lambda}$ form, and have a cosmological constraint on the neutrino mass with the same observation combination. We find that there is little correlation between $\beta$ and $\sum m_{\nu}$, and the neutrino mass is also unchanged, compared to the case in $\Lambda$CDM. This result is very similar to what $f(R)$ occurs. In the $f(R)$ model, the almost unchanged matter power spectrum favors an consistent neutrino mass with the $\Lambda$CDM model. Likewise in the I$\Lambda$CDM2 model, the interaction proportional to $\rho_{\Lambda}$ can not strongly influence the background expansion, but it more or less change perturbations. However, in terms of our constraint result of neutrino mass, changes in perturbations are not enough to compensate the effects of massive neutrinos on the matter perturbation. Therefore, a identical neutrino mass with that in $\Lambda$CDM is predicted. As for the mechanism behind changes in background for $Q=\beta H\rho_{\rm c}$ and in perturbations for $Q=3\beta H\rho_{\Lambda}$, there are a lot of issues to work out. We will arrange that discussion in our next paper.}
+
+From the left two panels in Fig.~\ref{fig:all-mnu}, we can see that $w$ is anti-correlated with $\sum m_{\nu}$ for $w$CDM, and $\beta$ is positively correlated with $\sum m_{\nu}$ for I$\Lambda$CDM1. While for the right two panels in Fig.~\ref{fig:all-mnu}, there are no obvious correlations between $\log_{10}B_{0}$ and $\sum m_{\nu}$ for $f(R)$, and between $\beta$ and $\sum m_{\nu}$ for I$\Lambda$CDM2. We find that, when the model parameter is correlated with the neutrino mass, the upper limit of the sum of the neutrino mass in these models will differ from the case of $\Lambda$CDM. On the contrary, if the model parameter is not correlated with the neutrino mass, the derived limits of the neutrino mass will be well consistent with the case of $\Lambda$CDM.
+
+Actually, the apparently strong correlations between the model parameters and the neutrino mass can be explained by the effects on the shape of the CMB power spectra. The effects on the background cosmology can be compensated by changing some other parameters to guarantee the fixed acoustic angular scale $\theta_{*}$. For example, in the models of $w$CDM and I$\Lambda$CDM1, the evolution of the energy density of DE due to the dynamical properties of DE described by the specific model parameters could impact the expansion rate of universe and thus the angular diameter distance $D_{\rm A}$ ($D_{\rm A}\propto 1/\theta_{*}$), which would be compensated by the shifts of neutrino mass.
+
+On the other hand, some model parameters can only exert a very slight effect on the background cosmology and the shape of the CMB power spectra, leading to the weak correlations between the model parameters and the neutrino mass. For example, in the $f(R)$ model, the model parameter $\log_{10}B_{0}$ is only a parameterized form of the perturbations under the MG theory, which is mainly related to the growth of structure. Thus, when the main effect of massive neutrinos concentrates on the background cosmology as they become non-relativistic after recombination, it is not expected that $\log_{10}B_{0}$ is correlated with $\sum m_{\nu}$.
+
+For the $w$CDM model, we have $w=-1.042^{+0.071}_{-0.024}$ ($1\sigma$), which means that a phantom energy is mildly favored. 
+For the I$\Lambda$CDM1 model, we obtain the coupling constant $\beta=0.0018\pm0.0002$ ($1\sigma$), which implies that the current observations prefer the possibility $\beta>0$ (cold dark matter decays into vacuum energy) at the level of $1\sigma$. For the I$\Lambda$CDM2 model, we obtain $\beta=0.0175^{+0.1231}_{-0.1133}$ ($1\sigma$), which indicates that the result of $\beta=0$ (equivalent to the case of $\Lambda$CDM) is favored by current observations at the $1\sigma$ level. In other words, we find no evidence of an obvious deviation from the $\Lambda$CDM cosmology in this model.
+For the $f(R)$ model, we can only obtain an upper limit $\log_{10}B_{0}<-5.67$ ($2\sigma$), of which the reason is that thus far the observational data concerning the growth of structure is not accurate enough.
+
+
+Next, we shall discuss how the model parameters affect other cosmological parameters. In Fig.~\ref{fig:all-model}, we show the $68\%$ C.L. and $95\%$ C.L. contours for the specific parameters in different models with late-time parameters $H_{0}$, $\Omega_{\rm m}$, and $\sigma_{8}$ respectively. From this figure, we can see that the parameter $w$ in $w$CDM model can slightly affect $H_{0}$, and the coupling constant $\beta$ in I$\Lambda$CDM2 model can significantly affect $\Omega_{\rm m}$ and $\sigma_{8}$.  However, for the $f(R)$ and \ILCDM1 models, the model parameters of $\log_{10}B_{0}$ and $\beta$ can not impose evident effects on the late-time parameters.
+%\update{In fact, from these effects, it can be verified that the consideration of the constant equation of state $w$ is more positive to change the background expansion, while the case of $Q=3\beta H\rho_{\Lambda}$ is more effective for altering perturbations, compared to the $\Lambda$CDM model.}
+
+\begin{figure*}
+\begin{center}
+\includegraphics[scale=0.6, angle=0]{w-mnu.pdf}
+\includegraphics[scale=0.6, angle=0]{B0-mnu.pdf}\\
+\includegraphics[scale=0.6, angle=0]{idebeta1-mnu.pdf}
+\includegraphics[scale=0.6, angle=0]{idebeta2-mnu.pdf}
+\caption{The 68\% and 95\% C.L. contours in the $w-\sum m_{\nu}$ plane for the $w$CDM model, the $\log_{10}B_{0}-\sum m_{\nu}$ plane for the $f(R)$ model, the $\beta-\sum m_{\nu}$ plane for the I$\Lambda$CDM1 ($Q=\beta H \rho_{\rm c}$) model, and the $\beta-\sum m_{\nu}$ plane for the I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) model.}
+\label{fig:all-mnu}
+\end{center}
+\end{figure*}
+
+\begin{figure*}
+\begin{center}
+\includegraphics[scale=0.5, angle=0]{w-om-sig-h0-182.pdf}
+\includegraphics[scale=0.5, angle=0]{b0-om-sig-h0-182.pdf}\\
+\includegraphics[scale=0.5, angle=0]{beta1-om-sig-h0-182.pdf}
+\includegraphics[scale=0.5, angle=0]{beta2-om-sig-h0-182.pdf}
+\caption{The 68\% and 95\% C.L. contours in the planes of $w$ versus $H_{0}$, $\Omega_{\rm m}$ and $\sigma_{8}$ for the $w$CDM model {(green region)}, $\log_{10}B_{0}$ versus $H_{0}$, $\Omega_{\rm m}$ and $\sigma_{8}$ for the $f(R)$ model {(blue region)}, $\beta$ versus $H_{0}$, $\Omega_{\rm m}$ and $\sigma_{8}$ for the I$\Lambda$CDM1 ($Q=\beta H \rho_{\rm c}$) model (purple region), and $\beta$ versus $H_{0}$, $\Omega_{\rm m}$ and $\sigma_{8}$ for the I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) model (cyan region).}
+\label{fig:all-model}
+\end{center}
+\end{figure*}
+
+
+
+\section{Conclusion}\label{sec:discussion}
+
+In this paper, we discuss the cosmological measurement of the total mass of neutrinos in five typical extensions to the $\Lambda$CDM cosmology including the simplest dynamical dark energy model ($w$CDM), the modified gravity model ($f(R)$), and the interacting vacuum energy models (in which two typical interaction forms of $Q=\beta H\rho_{\rm c}$ and $Q=\beta H\rho_{\Lambda}$ are considered). The $\Lambda$CDM model is considered as a reference model in the analysis. To do cosmological fits, we employ the current observational data sets including the CMB temperature and polarization data, the BAO measurement, the SN data, the $H_{0}$ measurement, the RSD data, the WL data with a prior from the analysis result of DES Y1, and the CMB lensing data.
+
+In our analysis, we obtain the upper limits of the neutrino mass of $\sum m_{\nu}<0.22$ eV for the $\Lambda$CDM model, $\sum m_{\nu}<0.33$ eV for the $w$CDM model, $\sum m_{\nu}<0.20$ eV for the $f(R)$ model, $\sum m_{\nu}<0.37$ eV for the I$\Lambda$CDM1 ($Q=\beta H\rho_{\rm c}$) model, and $\sum m_{\nu}<0.22$ eV for the I$\Lambda$CDM2 ($Q=\beta H\rho_{\Lambda}$) model. Compared to the $\Lambda$CDM model, the $w$CDM model and the I$\Lambda$CDM1 model can yield higher upper limits on the total mass of neutrinos, and the $f(R)$ model and the I$\Lambda$CDM2 model prefer well consistent upper limits of the neutrino mass with the case of $\Lambda$CDM (see Figs.~\ref{fig:mnu} and \ref{fig:mnu-om-sig-h0}).
+We also try to discuss how to explain these results (see Fig.~\ref{fig:all-mnu}). We find that the upper limits of the neutrino mass are largely affected by the model parameters. When the model parameters  {(such as $w$ in the $w$CDM model and $\beta$ in the I$\Lambda$CDM1 model)} are in strong correlations with the neutrino mass, the limits of the neutrino mass would have a clear shift, compared to the $\Lambda$CDM model. However, when the model parameters {(such as $B_{0}$ in the $f(R)$ model and $\beta$ in the I$\Lambda$CDM2 model)}  are not correlated with the neutrino mass, the derived limits of the neutrino mass will be well consistent with the case of $\Lambda$CDM.
+%\update{The main effect of massive neutrinos concentrates on the background cosmology as they become non-relativistic after recombination, as well as the suppression of matter power spectrum at small scale. For the $f(R)$ model and the I$\Lambda$CDM2 model with $Q=3\beta H\rho_{\rm \Lambda}$, their expansion histories and the growth histories of structure are nearly unchanged, compared to the $\Lambda$CDM model, and thus the constraints on neutrino masses are possible to be unchanged. However, in the $w$CDM model and the I$\Lambda$CDM2 model with $Q=3\beta H\rho_{\Lambda}$, the considerations of dynamical dark energy and the interaction can compensate the effects of massive neutrinos on the background through changing dark energy density, and thus large neutrino masses are given.}
+
+
+Finally, we study in detail the constraint results of the specific model parameters. {We obtain $w=-1.042^{+0.071}_{-0.024}$ ($1\sigma$) for the $w$CDM model, $\log_{10}B_{0}<-5.67$ ($2\sigma$) for the $f(R)$ model, $\beta=0.0018\pm0.0002$ ($1\sigma$) for the I$\Lambda$CDM1 model, and $\beta=0.0175^{+0.1231}_{-0.1133}$ ($1\sigma$) for the I$\Lambda$CDM2 model. These results indicate that the deviations from the $\Lambda$CDM model are at about $1\sigma$ level, which implies that the current cosmological observations do not favor a deviation from the $\Lambda$CDM cosmology.}
+
+
+
+
+\acknowledgments
+%This work was supported by the National Natural Science Foundation of China (Grants Nos.~11522540, 11690021, 11875102, and 11835009), the Top-Notch Young Talents Program of China, and the Provincial Department of Education of Liaoning (Grant No.~L2012087).
+
+This work was supported by the National Natural Science Foundation of China (Grants Nos.~11875102, 11835009, 11690021, and 11522540) and the National Program for Support of Top-Notch Young Professionals.
+
+
+\begin{thebibliography}{}
+
+%\cite{Lesgourgues:2006nd}
+\bibitem{Lesgourgues:2006nd}
+  J.~Lesgourgues and S.~Pastor,
+  %``Massive neutrinos and cosmology,''
+  Phys.\ Rept.\  {\bf 429}, 307 (2006).
+  %[astro-ph/0603494].
+  %%CITATION = ASTRO-PH/0603494;%%
+  %488 citations counted in INSPIRE as of 31 Oct 2015
+
+\bibitem{PDG2015-neutrino}
+K. Nakamura and S. T. Petcov, Chin. Phys. C {\bf 38}, 235-258 (2015).
+
+
+\bibitem{beta2}
+C. Weinheimer {\it et al.} Phys. Lett. B {\bf 460}, 219 (1999).
+
+\bibitem{beta1}
+V. M. Lobashev {\it et al.}, Phys. Lett. B {\bf 460}, 227 (1999).
+
+%\cite{Wolf:2008hf}
+\bibitem{Wolf:2008hf}
+  J.~Wolf [KATRIN Collaboration],
+  %``The KATRIN Neutrino Mass Experiment,''
+  Nucl.\ Instrum.\ Meth.\ A {\bf 623}, 442 (2010).
+%  doi:10.1016/j.nima.2010.03.030
+  %[arXiv:0810.3281 [physics.ins-det]].
+  %%CITATION = doi:10.1016/j.nima.2010.03.030;%%
+  %40 citations counted in INSPIRE as of 20 Nov 2015
+
+%\cite{Betts:2013uya}
+\bibitem{Betts:2013uya}
+  S.~Betts {\it et al.},
+  %``Development of a Relic Neutrino Detection Experiment at PTOLEMY: Princeton Tritium Observatory for Light, Early-Universe, Massive-Neutrino Yield,''
+  arXiv:1307.4738 [astro-ph.IM].
+  %%CITATION = ARXIV:1307.4738;%%
+  %67 citations counted in INSPIRE as of 14 Jun 2018
+
+%\cite{Zhang:2015wua}
+\bibitem{Zhang:2015wua}
+  J.~Zhang and S.~Zhou,
+  %``Relic Right-handed Dirac Neutrinos and Implications for Detection of Cosmic Neutrino Background,''
+  Nucl.\ Phys.\ B {\bf 903}, 211 (2016).
+  %doi:10.1016/j.nuclphysb.2015.12.014
+ % [arXiv:1509.02274 [hep-ph]].
+  %%CITATION = doi:10.1016/j.nuclphysb.2015.12.014;%%
+  %11 citations counted in INSPIRE as of 14 Jun 2018
+
+%\cite{Huang:2016qmh}
+\bibitem{Huang:2016qmh}
+  G.~Y.~Huang and S.~Zhou,
+  %``Discriminating between thermal and nonthermal cosmic relic neutrinos through an annual modulation at PTOLEMY,''
+  Phys.\ Rev.\ D {\bf 94}, no. 11, 116009 (2016).
+%  doi:10.1103/PhysRevD.94.116009
+%  [arXiv:1610.01347 [hep-ph]].
+  %%CITATION = doi:10.1103/PhysRevD.94.116009;%%
+  %4 citations counted in INSPIRE as of 14 Jun 2018
+
+%\cite{Zhang:2017ljh}
+\bibitem{Zhang:2017ljh}
+  J.~Zhang and X.~Zhang,
+  %``Gravitational clustering of cosmic relic neutrinos in the Milky Way,''
+  Nature Commun.\  {\bf 9}, 1833 (2018).
+%  doi:10.1038/s41467-018-04264-y
+%  [arXiv:1712.01153 [astro-ph.CO]].
+
+%\cite{Ade:2013zuv}
+\bibitem{Ade:2013zuv}
+  P.~A.~R.~Ade {\it et al.} [Planck Collaboration],
+  %``Planck 2013 results. XVI. Cosmological parameters,''
+  Astron.\ Astrophys.\  {\bf 571}, A16 (2014).
+  %[arXiv:1303.5076 [astro-ph.CO]].
+  %%CITATION = ARXIV:1303.5076;%%
+  %3979 citations counted in INSPIRE as of 31 Oct 2015
+
+\bibitem{Ade:2015xua}
+  P.~A.~R.~Ade {\it et al.} [Planck Collaboration],
+  %``Planck 2015 results. XIII. Cosmological parameters,''
+  Astron.\ Astrophys.\  {\bf 594}, A13 (2016).
+  %doi:10.1051/0004-6361/201525830
+  %[arXiv:1502.01589 [astro-ph.CO]].
+  %%CITATION = doi:10.1051/0004-6361/201525830;%%
+%\cite{Dodelson:1995es}
+
+
+%\bibitem{Aghanim:2018eyx}
+%  N.~Aghanim {\it et al.} [Planck Collaboration],
+  %``Planck 2018 results. VI. Cosmological parameters,''
+ % arXiv:1807.06209 [astro-ph.CO].
+
+
+\bibitem{Dodelson:1995es}
+  S.~Dodelson, E.~Gates and A.~Stebbins,
+  %``Cold + hot dark matter and the cosmic microwave background,''
+  Astrophys.\ J.\  {\bf 467}, 10 (1996).
+%  doi:10.1086/177581
+  %[astro-ph/9509147].
+  %%CITATION = doi:10.1086/177581;%%
+  %114 citations counted in INSPIRE as of 21 Nov 2015
+
+
+%\cite{Ichikawa:2004zi}
+\bibitem{Ichikawa:2004zi}
+  K.~Ichikawa, M.~Fukugita and M.~Kawasaki,
+  %``Constraining neutrino masses by CMB experiments alone,''
+  Phys.\ Rev.\ D {\bf 71}, 043001 (2005).
+ % doi:10.1103/PhysRevD.71.043001
+  %[astro-ph/0409768].
+  %%CITATION = doi:10.1103/PhysRevD.71.043001;%%
+  %110 citations counted in INSPIRE as of 21 Nov 2015
+
+
+%\cite{Alam:2016hwk}
+\bibitem{Alam:2016hwk}
+  S.~Alam {\it et al.} [BOSS Collaboration],
+  %``The clustering of galaxies in the completed SDSS-III Baryon Oscillation Spectroscopic Survey: cosmological analysis of the DR12 galaxy sample,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 470}, no. 3, 2617 (2017).
+ % doi:10.1093/mnras/stx721
+  %[arXiv:1607.03155 [astro-ph.CO]].
+  %%CITATION = doi:10.1093/mnras/stx721;%%
+  %266 citations counted in INSPIRE as of 23 Apr 2018
+%\cite{Abbott:2017wau}
+\bibitem{Abbott:2017wau}
+  T.~M.~C.~Abbott {\it et al.} [DES Collaboration],
+  %``Dark Energy Survey year 1 results: Cosmological constraints from galaxy clustering and weak lensing,''
+  Phys.\ Rev.\ D {\bf 98}, no. 4, 043526 (2018).
+  %doi:10.1103/PhysRevD.98.043526
+  %[arXiv:1708.01530 [astro-ph.CO]].
+
+
+
+ %\cite{Zhang:2015uhk}
+\bibitem{Zhang:2015uhk}
+  X.~Zhang,
+  %``Impacts of dark energy on weighing neutrinos after Planck 2015,''
+  Phys.\ Rev.\ D {\bf 93}, no. 8, 083011 (2016).
+  %doi:10.1103/PhysRevD.93.083011
+  %[arXiv:1511.02651 [astro-ph.CO]].
+
+%\cite{Zhao:2016ecj}
+\bibitem{Zhao:2016ecj}
+  M.~M.~Zhao, Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Constraining neutrino mass and extra relativistic degrees of freedom in dynamical dark energy models using Planck 2015 data in combination with low-redshift cosmological probes: basic extensions to ��CDM cosmology,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 469}, no. 2, 1713 (2017).
+  %doi:10.1093/mnras/stx978
+  %[arXiv:1608.01219 [astro-ph.CO]].
+
+\bibitem{Chen:2015oga}
+  Y.~Chen and L.~Xu,
+  Phys.\ Lett.\ B {\bf 752}, 66 (2016).
+ % doi:10.1016/j.physletb.2015.11.022
+  %[arXiv:1507.02008 [astro-ph.CO]].
+
+%\cite{Zhang:2015rha}
+\bibitem{Zhang:2015rha}
+  J.~F.~Zhang, M.~M.~Zhao, Y.~H.~Li and X.~Zhang,
+  %``Neutrinos in the holographic dark energy model: constraints from latest measurements of expansion history and growth of structure,''
+  JCAP {\bf 1504}, 038 (2015).
+%  doi:10.1088/1475-7516/2015/04/038
+%  [arXiv:1502.04028 [astro-ph.CO]].
+  %%CITATION = doi:10.1088/1475-7516/2015/04/038;%%
+  %29 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Zhao:2017urm}
+\bibitem{Zhao:2017urm}
+  M.~M.~Zhao, D.~Z.~He, J.~F.~Zhang and X.~Zhang,
+  %``Search for sterile neutrinos in holographic dark energy cosmology: Reconciling Planck observation with the local measurement of the Hubble constant,''
+  Phys.\ Rev.\ D {\bf 96}, no. 4, 043520 (2017).
+%  doi:10.1103/PhysRevD.96.043520
+%  [arXiv:1703.08456 [astro-ph.CO]].
+  %%CITATION = doi:10.1103/PhysRevD.96.043520;%%
+  %21 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Feng:2017mfs}
+\bibitem{Feng:2017mfs}
+  L.~Feng, J.~F.~Zhang and X.~Zhang,
+  %``Searching for sterile neutrinos in dynamical dark energy cosmologies,''
+  Sci.\ China Phys.\ Mech.\ Astron.\  {\bf 61}, no. 5, 050411 (2018).
+%  doi:10.1007/s11433-017-9150-3
+%  [arXiv:1706.06913 [astro-ph.CO]].
+  %%CITATION = doi:10.1007/s11433-017-9150-3;%%
+  %14 citations counted in INSPIRE as of 27 Oct 2018
+
+
+ \bibitem{Vagnozzi:2018jhn}
+  S.~Vagnozzi, S.~Dhawan, M.~Gerbino, K.~Freese, A.~Goobar and O.~Mena,
+  %``Constraints on the sum of the neutrino masses in dynamical dark energy models with $w(z) \geq -1$ are tighter than those obtained in $\Lambda$CDM,''
+  Phys.\ Rev.\ D {\bf 98}, no. 8, 083501 (2018).
+  %doi:10.1103/PhysRevD.98.083501
+  %[arXiv:1801.08553 [astro-ph.CO]].
+
+\bibitem{Zhang:2017rbg}
+  X.~Zhang,
+  %``Weighing neutrinos in dynamical dark energy models,''
+  Sci.\ China Phys.\ Mech.\ Astron.\  {\bf 60}, no. 6, 060431 (2017).
+  %doi:10.1007/s11433-017-9025-7
+  %[arXiv:1703.00651 [astro-ph.CO]].
+  %%CITATION = doi:10.1007/s11433-017-9025-7;%%
+
+%\cite{Li:2004rb}
+\bibitem{Li:2004rb}
+  M.~Li,
+  %``A Model of holographic dark energy,''
+  Phys.\ Lett.\ B {\bf 603}, 1 (2004).
+ % doi:10.1016/j.physletb.2004.10.014
+  %[hep-th/0403127].
+  %%CITATION = doi:10.1016/j.physletb.2004.10.014;%%
+  %923 citations counted in INSPIRE as of 17 Mar 2017
+
+ \bibitem{hde2}
+Q.~G.~Huang and M.~Li,
+ % ``Anthropic principle favors the holographic dark energy,''
+  JCAP {\bf 0503}, 001 (2005).
+  %[hep-th/0410095].
+
+
+%\cite{Zhang:2005hs}
+\bibitem{Zhang:2005hs}
+  X.~Zhang and F.~Q.~Wu,
+  %``Constraints on holographic dark energy from Type Ia supernova observations,''
+  Phys.\ Rev.\ D {\bf 72}, 043524 (2005).
+%  doi:10.1103/PhysRevD.72.043524
+%  [astro-ph/0506310].
+  %%CITATION = doi:10.1103/PhysRevD.72.043524;%%
+  %332 citations counted in INSPIRE as of 27 Oct 2018
+
+
+%\cite{Zhang:2006qu}
+\bibitem{Zhang:2006qu}
+  X.~Zhang,
+  %``Dynamical vacuum energy, holographic quintom, and the reconstruction of scalar-field dark energy,''
+  Phys.\ Rev.\ D {\bf 74}, 103505 (2006).
+  %[astro-ph/0609699].
+  %%CITATION = ASTRO-PH/0609699;%%
+  %157 citations counted in INSPIRE as of 31 Oct 2015
+
+%\cite{Chang:2005ph}
+\bibitem{Chang:2005ph}
+  Z.~Chang, F.~Q.~Wu and X.~Zhang,
+  %``Constraints on holographic dark energy from x-ray gas mass fraction of galaxy clusters,''
+  Phys.\ Lett.\ B {\bf 633}, 14 (2006).
+%  doi:10.1016/j.physletb.2005.10.095
+%  [astro-ph/0509531].
+  %%CITATION = doi:10.1016/j.physletb.2005.10.095;%%
+  %152 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Zhang:2006av}
+\bibitem{Zhang:2006av}
+  X.~Zhang,
+  %``Reconstructing holographic quintessence,''
+  Phys.\ Lett.\ B {\bf 648}, 1 (2007).
+%  doi:10.1016/j.physletb.2007.02.069
+%  [astro-ph/0604484].
+  %%CITATION = doi:10.1016/j.physletb.2007.02.069;%%
+  %139 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Zhang:2007sh}
+\bibitem{Zhang:2007sh}
+  X.~Zhang and F.~Q.~Wu,
+  %``Constraints on Holographic Dark Energy from Latest Supernovae, Galaxy Clustering, and Cosmic Microwave Background Anisotropy Observations,''
+  Phys.\ Rev.\ D {\bf 76}, 023502 (2007).
+%  doi:10.1103/PhysRevD.76.023502
+%  [astro-ph/0701405].
+  %%CITATION = doi:10.1103/PhysRevD.76.023502;%%
+  %214 citations counted in INSPIRE as of 27 Oct 2018
+
+
+%\cite{Zhang:2007an}
+\bibitem{Zhang:2007an}
+  J.~f.~Zhang, X.~Zhang and H.~y.~Liu,
+  %``Holographic dark energy in a cyclic universe,''
+  Eur.\ Phys.\ J.\ C {\bf 52}, 693 (2007).
+%  doi:10.1140/epjc/s10052-007-0408-2
+%  [arXiv:0708.3121 [hep-th]].
+  %%CITATION = doi:10.1140/epjc/s10052-007-0408-2;%%
+  %88 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Zhang:2007es}
+\bibitem{Zhang:2007es}
+  J.~Zhang, X.~Zhang and H.~Liu,
+  %``Holographic tachyon model,''
+  Phys.\ Lett.\ B {\bf 651}, 84 (2007).
+%  doi:10.1016/j.physletb.2007.06.019
+%  [arXiv:0706.1185 [astro-ph]].
+  %%CITATION = doi:10.1016/j.physletb.2007.06.019;%%
+  %98 citations counted in INSPIRE as of 27 Oct 2018
+
+
+%\cite{Ma:2007av}
+\bibitem{Ma:2007av}
+  Y.~Z.~Ma and X.~Zhang,
+  %``Possible Theoretical limits on holographic quintessence from weak gravity conjecture,''
+  Phys.\ Lett.\ B {\bf 661}, 239 (2008).
+%  doi:10.1016/j.physletb.2008.02.028
+%  [arXiv:0709.1517 [astro-ph]].
+  %%CITATION = doi:10.1016/j.physletb.2008.02.028;%%
+  %49 citations counted in INSPIRE as of 27 Oct 2018
+
+
+%\cite{Zhang:2014ija}
+\bibitem{Zhang:2014ija}
+  J.~F.~Zhang, M.~M.~Zhao, J.~L.~Cui and X.~Zhang,
+  %``Revisiting the holographic dark energy in a non-flat universe: alternative model and cosmological parameter constraints,''
+  Eur.\ Phys.\ J.\ C {\bf 74}, no. 11, 3178 (2014).
+%  doi:10.1140/epjc/s10052-014-3178-7
+%  [arXiv:1409.6078 [astro-ph.CO]].
+  %%CITATION = doi:10.1140/epjc/s10052-014-3178-7;%%
+  %19 citations counted in INSPIRE as of 27 Oct 2018
+
+
+
+
+
+\bibitem{Mortonson:2013zfa}
+  M.~J.~Mortonson, D.~H.~Weinberg and M.~White,
+  %``Dark Energy: A Short Review,''
+  Chin. Phys. C {\bf 38}, 361-368 (2015).
+  %[arXiv:1401.0046 [astro-ph.CO]].
+  %%CITATION = ARXIV:1401.0046;%%
+  %14 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{Sotiriou:2008rp}
+\bibitem{Sotiriou:2008rp}
+  T.~P.~Sotiriou and V.~Faraoni,
+  %``f(R) Theories Of Gravity,''
+  Rev.\ Mod.\ Phys.\  {\bf 82}, 451 (2010).
+%  doi:10.1103/RevModPhys.82.451
+  %[arXiv:0805.1726 [gr-qc]].
+  %%CITATION = doi:10.1103/RevModPhys.82.451;%%
+  %1403 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{DeFelice:2010aj}
+\bibitem{DeFelice:2010aj}
+  A.~De Felice and S.~Tsujikawa,
+  %``f(R) theories,''
+  Living Rev.\ Rel.\  {\bf 13}, 3 (2010).
+%  doi:10.12942/lrr-2010-3
+  %[arXiv:1002.4928 [gr-qc]].
+  %%CITATION = doi:10.12942/lrr-2010-3;%%
+  %929 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{Clifton:2011jh}
+\bibitem{Clifton:2011jh}
+  T.~Clifton, P.~G.~Ferreira, A.~Padilla and C.~Skordis,
+  %``Modified Gravity and Cosmology,''
+  Phys.\ Rept.\  {\bf 513}, 1 (2012).
+%  doi:10.1016/j.physrep.2012.01.001
+  %[arXiv:1106.2476 [astro-ph.CO]].
+  %%CITATION = doi:10.1016/j.physrep.2012.01.001;%%
+  %807 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{Weinberg:2012es}
+\bibitem{Weinberg:2012es}
+  D.~H.~Weinberg, M.~J.~Mortonson, D.~J.~Eisenstein, C.~Hirata, A.~G.~Riess and E.~Rozo,
+  %``Observational Probes of Cosmic Acceleration,''
+  Phys.\ Rept.\  {\bf 530}, 87 (2013).
+%  doi:10.1016/j.physrep.2013.05.001
+  %[arXiv:1201.2434 [astro-ph.CO]].
+  %%CITATION = doi:10.1016/j.physrep.2013.05.001;%%
+  %295 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{Joyce:2014kja}
+\bibitem{Joyce:2014kja}
+  A.~Joyce, B.~Jain, J.~Khoury and M.~Trodden,
+  %``Beyond the Cosmological Standard Model,''
+  Phys.\ Rept.\  {\bf 568}, 1 (2015).
+%  doi:10.1016/j.physrep.2014.12.002
+  %[arXiv:1407.0059 [astro-ph.CO]].
+  %%CITATION = doi:10.1016/j.physrep.2014.12.002;%%
+  %122 citations counted in INSPIRE as of 21 Nov 2015
+
+
+%\cite{Carroll:2003wy}
+\bibitem{Carroll:2003wy}
+  S.~M.~Carroll, V.~Duvvuri, M.~Trodden and M.~S.~Turner,
+  %``Is cosmic speed - up due to new gravitational physics?,''
+  Phys.\ Rev.\ D {\bf 70}, 043528 (2004).
+%  doi:10.1103/PhysRevD.70.043528
+  %[astro-ph/0306438].
+
+\bibitem{DGP}
+G. R. Dvali, G. Gabadadze and M. Porrati,
+Phys. Lett. B {\bf 485}, 208 (2000).
+
+%\cite{Wang:1998gt}
+\bibitem{Wang:1998gt}
+  L.~M.~Wang and P.~J.~Steinhardt,
+  %``Cluster abundance constraints on quintessence models,''
+  Astrophys.\ J.\  {\bf 508}, 483 (1998).
+%  doi:10.1086/306436
+  %[astro-ph/9804015].
+
+%\cite{Linder:2005in}
+\bibitem{Linder:2005in}
+  E.~V.~Linder,
+  %``Cosmic growth history and expansion history,''
+  Phys.\ Rev.\ D {\bf 72}, 043529 (2005).
+%  doi:10.1103/PhysRevD.72.043529
+  %[astro-ph/0507263].
+  %%CITATION = doi:10.1103/PhysRevD.72.043529;%%
+  %393 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{Zhang:2007nk}
+\bibitem{Zhang:2007nk}
+  P.~Zhang, M.~Liguori, R.~Bean and S.~Dodelson,
+  %``Probing Gravity at Cosmological Scales by Measurements which Test the Relationship between Gravitational Lensing and Matter Overdensity,''
+  Phys.\ Rev.\ Lett.\  {\bf 99}, 141302 (2007).
+%  doi:10.1103/PhysRevLett.99.141302
+  %[arXiv:0704.1932 [astro-ph]].
+  %%CITATION = doi:10.1103/PhysRevLett.99.141302;%%
+  %234 citations counted in INSPIRE as of 21 Nov 2015
+
+
+
+%\cite{Song:2006ej}
+\bibitem{Song:2006ej}
+  Y.~S.~Song, W.~Hu and I.~Sawicki,
+  %``The Large Scale Structure of f(R) Gravity,''
+  Phys.\ Rev.\ D {\bf 75}, 044004 (2007).
+%  doi:10.1103/PhysRevD.75.044004
+  %[astro-ph/0610532].
+  %%CITATION = doi:10.1103/PhysRevD.75.044004;%%
+
+
+
+%\cite{Bertschinger:2008zb}
+\bibitem{Bertschinger:2008zb}
+  E.~Bertschinger and P.~Zukin,
+  %``Distinguishing Modified Gravity from Dark Energy,''
+  Phys.\ Rev.\ D {\bf 78}, 024015 (2008).
+%  doi:10.1103/PhysRevD.78.024015
+  %[arXiv:0801.2431 [astro-ph]].
+
+%\cite{Giannantonio:2009gi}
+\bibitem{Giannantonio:2009gi}
+  T.~Giannantonio, M.~Martinelli, A.~Silvestri and A.~Melchiorri,
+  %``New constraints on parametrised modified gravity from correlations of the CMB with large scale structure,''
+  JCAP {\bf 1004}, 030 (2010).
+%  doi:10.1088/1475-7516/2010/04/030
+  %[arXiv:0909.2045 [astro-ph.CO]].
+
+%\cite{Li:2015fR}
+\bibitem{Li:2015fR}
+  Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Probing $f(R)$ cosmology with sterile neutrinos via measurements of scale-dependent growth rate of structure,''
+  Phys.\ Lett.\ B {\bf 744}, 213 (2015).
+%  doi:10.1016/j.physletb.2015.03.063
+  %[arXiv:1502.01136 [astro-ph.CO]].
+  %%CITATION = doi:10.1016/j.physletb.2015.03.063;%%
+
+
+  %%CITATION = doi:10.1086/306436;%%
+  %581 citations counted in INSPIRE as of 21 Nov 2015
+\bibitem{Amendola:1999er}
+  L.~Amendola,
+  %``Coupled quintessence,"
+  Phys.\ Rev.\ D {\bf 62}, 043511 (2000).
+  %doi:10.1103/PhysRevD.62.043511
+%[astro-ph/9908023].
+
+
+\bibitem{Zimdahl:2005bk}
+  W.~Zimdahl,
+  %``Interacting dark energy and cosmological equations of state,"
+  Int.\ J.\ Mod.\ Phys.\ D {\bf 14}, 2319 (2005).
+  %doi:10.1142/S0218271805007784
+  %[gr-qc/0505056].
+
+
+%\cite{Zhang:2005rg}
+\bibitem{Zhang:2005rg}
+  X.~Zhang,
+  %``Coupled quintessence in a power-law case and the cosmic coincidence problem,''
+  Mod.\ Phys.\ Lett.\ A {\bf 20}, 2575 (2005).
+%  doi:10.1142/S0217732305017597
+%  [astro-ph/0503072].
+  %%CITATION = doi:10.1142/S0217732305017597;%%
+  %118 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Zhang:2005rj}
+\bibitem{Zhang:2005rj}
+  X.~Zhang,
+  %``Statefinder diagnostic for coupled quintessence,''
+  Phys.\ Lett.\ B {\bf 611}, 1 (2005).
+%  doi:10.1016/j.physletb.2005.02.022
+ % [astro-ph/0503075].
+  %%CITATION = doi:10.1016/j.physletb.2005.02.022;%%
+  %131 citations counted in INSPIRE as of 27 Oct 2018
+
+
+%\cite{Zhang:2004gc}
+\bibitem{Zhang:2004gc}
+  X.~Zhang, F.~Q.~Wu and J.~Zhang,
+  %``A New generalized Chaplygin gas as a scheme for unification of dark energy and dark matter,''
+  JCAP {\bf 0601}, 003 (2006).
+%  doi:10.1088/1475-7516/2006/01/003
+%  [astro-ph/0411221].
+  %%CITATION = doi:10.1088/1475-7516/2006/01/003;%%
+  %128 citations counted in INSPIRE as of 27 Oct 2018
+
+
+
+
+
+\bibitem{Wang:2006qw}
+  B.~Wang, J.~Zang, C.~Y.~Lin, E.~Abdalla and S.~Micheletti,
+  %``Interacting dark energy and dark matter:observational constraints from cosmological parameters,"
+  Nucl.\ Phys.\ B {\bf 778}, 69 (2007).
+  %doi:10.1016/j.nuclphysb.2007.04.037
+  %[astro-ph/0607126].
+
+
+
+\bibitem{Guo:2007zk}
+  Z.~K.~Guo, N.~Ohta and S.~Tsujikawa,
+  %``Probing the coupling between dark components of the universe,"
+  Phys.\ Rev.\ D {\bf 76}, 023508 (2007).
+  %doi:10.1103/PhysRevD.76.023508
+  %[astro-ph/0702015 [astro-ph]].
+
+
+%\cite{Zhang:2007uh}
+\bibitem{Zhang:2007uh}
+  J.~Zhang, H.~Liu and X.~Zhang,
+  %``Statefinder diagnosis for the interacting model of holographic dark energy,''
+  Phys.\ Lett.\ B {\bf 659}, 26 (2008).
+%  doi:10.1016/j.physletb.2007.10.086
+%  [arXiv:0705.4145 [astro-ph]].
+  %%CITATION = doi:10.1016/j.physletb.2007.10.086;%%
+  %107 citations counted in INSPIRE as of 27 Oct 2018
+
+%\cite{Li:2009zs}
+\bibitem{Li:2009zs}
+  M.~Li, X.~D.~Li, S.~Wang, Y.~Wang and X.~Zhang,
+  %``Probing interaction and spatial curvature in the holographic dark energy model,''
+  JCAP {\bf 0912}, 014 (2009).
+%  doi:10.1088/1475-7516/2009/12/014
+%  [arXiv:0910.3855 [astro-ph.CO]].
+  %%CITATION = doi:10.1088/1475-7516/2009/12/014;%%
+  %98 citations counted in INSPIRE as of 27 Oct 2018
+
+\bibitem{Koyama:2009gd}
+  K.~Koyama, R.~Maartens and Y.~S.~Song,
+  %``Velocities as a probe of dark sector interactions,"
+  JCAP {\bf 0910}, 017 (2009).
+  %doi:10.1088/1475-7516/2009/10/017
+  %[arXiv:0907.2126 [astro-ph.CO]].
+
+%\cite{Zhang:2009qa}
+\bibitem{Zhang:2009qa}
+  L.~Zhang, J.~Cui, J.~Zhang and X.~Zhang,
+  %``Interacting model of new agegraphic dark energy: Cosmological evolution and statefinder diagnostic,''
+  Int.\ J.\ Mod.\ Phys.\ D {\bf 19}, 21 (2010).
+%  doi:10.1142/S0218271810016245
+%  [arXiv:0911.2838 [astro-ph.CO]].
+  %%CITATION = doi:10.1142/S0218271810016245;%%
+  %48 citations counted in INSPIRE as of 27 Oct 2018
+
+
+
+
+\bibitem{Wei:2010cs}
+  H.~Wei,
+  %``Cosmological constraints on the sign-changeable interactions,"
+  Commun.\ Theor.\ Phys.\  {\bf 56}, 972 (2011).
+  %doi:10.1088/0253-6102/56/5/29
+  %[arXiv:1010.1074 [gr-qc]].
+
+\bibitem{He:2010im}
+  J.~H.~He, B.~Wang and E.~Abdalla,
+  %``Testing the interaction between dark energy and dark matter via latest observations,"
+  Phys.\ Rev.\ D {\bf 83}, 063515 (2011).
+  %doi:10.1103/PhysRevD.83.063515
+  %[arXiv:1012.3904 [astro-ph.CO]].
+
+\bibitem{Li:2011ga}
+  Y.~H.~Li and X.~Zhang,
+  %``Running coupling: does the coupling between dark energy and dark matter change sign during the cosmological evolution,"
+  Eur.\ Phys.\ J.\ C {\bf 71}, 1700 (2011).
+  %doi:10.1140/epjc/s10052-011-1700-8
+  %[arXiv:1103.3185 [astro-ph.CO]].
+
+\bibitem{Zhang:2012uu}
+  Z.~Zhang, S.~Li, X.~D.~Li, X.~Zhang and M.~Li,
+  %``Revisit of the interaction between holographic dark energy and dark matter,"
+  JCAP {\bf 1206}, 009 (2012).
+%  doi:10.1088/1475-7516/2012/06/009
+  %[arXiv:1204.6135 [astro-ph.CO]].
+
+\bibitem{Zhang:2013lea}
+  J.~Zhang, L.~Zhao and X.~Zhang,
+  %``Revisiting the interacting model of new agegraphic dark energy,"
+  Sci.\ China Phys.\ Mech.\ Astron.\  {\bf 57}, 387 (2014).
+%  doi:10.1007/s11433-013-5378-9
+  %[arXiv:1306.1289 [astro-ph.CO]].
+
+
+\bibitem{Li:2013bya}
+  Y.~H.~Li and X.~Zhang,
+  %``Large-scale stable interacting dark energy model: cosmological perturbations and observational constraints,"
+  Phys.\ Rev.\ D {\bf 89}, no. 8, 083009 (2014).
+  %doi:10.1103/PhysRevD.89.083009
+  %[arXiv:1312.6328 [astro-ph.CO]].
+
+%\cite{Wang:2014oga}
+\bibitem{Wang:2014oga}
+  S.~Wang, Y.~Z.~Wang, J.~J.~Geng and X.~Zhang,
+  %``Effects of time-varying $\beta$ in SNLS3 on constraining interacting dark energy models,''
+  Eur.\ Phys.\ J.\ C {\bf 74}, no. 11, 3148 (2014).
+%  doi:10.1140/epjc/s10052-014-3148-0
+%  [arXiv:1406.0072 [astro-ph.CO]].
+  %%CITATION = doi:10.1140/epjc/s10052-014-3148-0;%%
+  %25 citations counted in INSPIRE as of 27 Oct 2018
+
+
+\bibitem{Geng:2015ara}
+  J.~J.~Geng, Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Redshift drift exploration for interacting dark energy,"
+  Eur.\ Phys.\ J.\ C {\bf 75}, no. 8, 356 (2015).
+%  doi:10.1140/epjc/s10052-015-3581-8
+  %[arXiv:1501.03874 [astro-ph.CO]].
+
+
+\bibitem{Murgia:2016ccp}
+  R.~Murgia, S.~Gariazzo and N.~Fornengo,
+ % ``Constraints on the coupling between dark energy and dark matter from CMB data,"
+  JCAP {\bf 1604}, no. 04, 014 (2016).
+  %doi:10.1088/1475-7516/2016/04/014
+  %[arXiv:1602.01765 [astro-ph.CO]].
+
+
+ %[arXiv:1602.02103 [astro-ph.CO]].
+\bibitem{Wang:2016lxa}
+  B.~Wang, E.~Abdalla, F.~Atrio-Barandela and D.~Pavon,
+  %``Dark matter and dark energy interactions: theoretical challenges, cosmological implications and observational signatures,"
+  Rept.\ Prog.\ Phys.\  {\bf 79}, no. 9, 096901 (2016).
+%  doi:10.1088/0034-4885/79/9/096901
+  %[arXiv:1603.08299 [astro-ph.CO]].
+
+
+\bibitem{Pourtsidou:2016ico}
+  A.~Pourtsidou and T.~Tram,
+  %``Reconciling CMB and structure growth measurements with dark energy interactions,"
+  Phys.\ Rev.\ D {\bf 94}, no. 4, 043518 (2016).
+  %doi:10.1103/PhysRevD.94.043518
+  %[arXiv:1604.04222 [astro-ph.CO]].
+
+\bibitem{Feng:2016djj}
+  L.~Feng and X.~Zhang,
+  %%``Revisit of the interacting holographic dark energy model after Planck 2015,"
+  JCAP {\bf 1608}, no. 08, 072 (2016).
+%  doi:10.1088/1475-7516/2016/08/072
+ % [arXiv:1607.05567 [astro-ph.CO]].
+
+\bibitem{Xia:2016vnp}
+  D.~M.~Xia and S.~Wang,
+  %``Constraining interacting dark energy models with latest cosmological observations,"
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 463}, 952 (2016).
+  %doi:10.1093/mnras/stw2073
+  %[arXiv:1608.04545 [astro-ph.CO]].
+
+\bibitem{Costa:2016tpb}
+  A.~A.~Costa, X.~D.~Xu, B.~Wang and E.~Abdalla,
+  %``Constraints on interacting dark energy models from Planck 2015 and redshift-space distortion data,''
+  JCAP {\bf 1701}, no. 01, 028 (2017).
+  %doi:10.1088/1475-7516/2017/01/028
+ % [arXiv:1605.04138 [astro-ph.CO]].
+
+\bibitem{vandeBruck:2016hpz}
+  C.~van de Bruck, J.~Mifsud and J.~Morrice,
+  %``Testing coupled dark energy models with their cosmological background evolution,''
+  Phys.\ Rev.\ D {\bf 95}, no. 4, 043513 (2017).
+  %doi:10.1103/PhysRevD.95.043513
+ % [arXiv:1609.09855 [astro-ph.CO]].
+
+
+\bibitem{Kumar:2017dnp}
+  S.~Kumar and R.~C.~Nunes,
+  %``Echo of interactions in the dark sector,''
+  Phys.\ Rev.\ D {\bf 96}, no. 10, 103511 (2017).
+  %doi:10.1103/PhysRevD.96.103511
+  %[arXiv:1702.02143 [astro-ph.CO]].
+
+%\cite{Li:2017usw}
+\bibitem{Li:2017usw}
+  H.~L.~Li, J.~F.~Zhang, L.~Feng and X.~Zhang,
+  %``Reexploration of interacting holographic dark energy model: Cases of interaction term excluding the Hubble parameter,''
+  Eur.\ Phys.\ J.\ C {\bf 77}, no. 12, 907 (2017).
+%  doi:10.1140/epjc/s10052-017-5473-6
+%  [arXiv:1711.06159 [astro-ph.CO]].
+  %%CITATION = doi:10.1140/epjc/s10052-017-5473-6;%%
+  %4 citations counted in INSPIRE as of 27 Oct 2018
+
+
+
+%\cite{Sola:2017jbl}
+\bibitem{Sola:2017jbl}
+  J.~Sola, J.~d.~C.~Perez and A.~Gomez-Valent,
+  %``Possible signals of vacuum dynamics in the Universe,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 478}, no. 4, 4357 (2018).
+  %doi:10.1093/mnras/sty1253
+  %[arXiv:1703.08218 [astro-ph.CO]].
+  %%CITATION = doi:10.1093/mnras/sty1253;%%
+  %36 citations counted in INSPIRE as of 29 Aug 2018
+
+%\cite{Guo:2017deu}
+\bibitem{Guo:2017deu}
+  J.~J.~Guo, J.~F.~Zhang, Y.~H.~Li, D.~Z.~He and X.~Zhang,
+  %``Probing the sign-changeable interaction between dark energy and dark matter with current observations,''
+  Sci.\ China Phys.\ Mech.\ Astron.\  {\bf 61}, no. 3, 030011 (2018).
+%  doi:10.1007/s11433-017-9131-9
+%  [arXiv:1710.03068 [astro-ph.CO]].
+  %%CITATION = doi:10.1007/s11433-017-9131-9;%%
+  %6 citations counted in INSPIRE as of 27 Oct 2018
+
+
+
+
+
+
+
+
+\bibitem{Guo:2017hea}
+  R.~Y.~Guo, Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Weighing neutrinos in the scenario of vacuum energy interacting with cold dark matter: application of the parameterized post-Friedmann approach,''
+  JCAP {\bf 1705}, no. 05, 040 (2017).
+  %doi:10.1088/1475-7516/2017/05/040
+  %[arXiv:1702.04189 [astro-ph.CO]].
+
+\bibitem{Guo:2018gyo}
+  R.~Y.~Guo, J.~F.~Zhang and X.~Zhang,
+  %``Exploring neutrino mass and mass hierarchy in the scenario of vacuum energy interacting with cold dark matte,''
+  Chin.\ Phys.\ C {\bf 42}, no. 9, 095103 (2018).
+  %doi:10.1088/1674-1137/42/9/095103
+  %[arXiv:1803.06910 [astro-ph.CO]].
+
+
+
+
+
+
+
+
+
+
+%\cite{Lewis:1999bs}
+\bibitem{Lewis:1999bs}
+  A.~Lewis, A.~Challinor and A.~Lasenby,
+  %``Efficient computation of CMB anisotropies in closed FRW models,''
+  Astrophys.\ J.\  {\bf 538}, 473 (2000).
+%  doi:10.1086/309179
+  %[astro-ph/9911177].
+  %%CITATION = doi:10.1086/309179;%%
+  %1803 citations counted in INSPIRE as of 21 Nov 2015
+
+%\cite{Hojjati:2011ix}
+\bibitem{Hojjati:2011ix}
+  A.~Hojjati, L.~Pogosian and G.~B.~Zhao,
+  %``Testing gravity with CAMB and CosmoMC,''
+  JCAP {\bf 1108}, 005 (2011).
+%  doi:10.1088/1475-7516/2011/08/005
+  %[arXiv:1106.4543 [astro-ph.CO]].
+  %%CITATION = doi:10.1088/1475-7516/2011/08/005;%%
+
+\bibitem{Valiviita:2008iv}
+  J.~Valiviita, E.~Majerotto and R.~Maartens,
+  %``Instability in interacting dark energy and dark matter fluids,''
+  JCAP {\bf 0807}, 020 (2008).
+  %doi:10.1088/1475-7516/2008/07/020
+  %[arXiv:0804.0232 [astro-ph]].
+
+\bibitem{Li:2014eha}
+  Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Parametrized Post-Friedmann Framework for Interacting Dark Energy,''
+  Phys.\ Rev.\ D {\bf 90}, no. 6, 063005 (2014).
+  %doi:10.1103/PhysRevD.90.063005
+  %[arXiv:1404.5220 [astro-ph.CO]].
+
+\bibitem{Li:2014cee}
+  Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Exploring the full parameter space for an interacting dark energy model with recent observations including redshift-space distortions: Application of the parametrized post-Friedmann approach,''
+  Phys.\ Rev.\ D {\bf 90}, no. 12, 123007 (2014).
+  %doi:10.1103/PhysRevD.90.123007
+  %[arXiv:1409.7205 [astro-ph.CO]].
+
+\bibitem{Li:2015vla}
+  Y.~H.~Li, J.~F.~Zhang and X.~Zhang,
+  %``Testing models of vacuum energy interacting with cold dark matter,''
+  Phys.\ Rev.\ D {\bf 93}, no. 2, 023002 (2016).
+  %doi:10.1103/PhysRevD.93.023002
+  %[arXiv:1506.06349 [astro-ph.CO]].
+
+\bibitem{Zhang:2017ize}
+  X.~Zhang,
+  %``Probing the interaction between dark energy and dark matter with the parametrized post-Friedmann approach,''
+  Sci.\ China Phys.\ Mech.\ Astron.\  {\bf 60}, no. 5, 050431 (2017).
+  %doi:10.1007/s11433-017-9013-7
+  %[arXiv:1702.04564 [astro-ph.CO]].
+
+\bibitem{Feng:2017usu}
+  L.~Feng, J.~F.~Zhang and X.~Zhang,
+  %``Search for sterile neutrinos in a universe of vacuum energy interacting with cold dark matter,''
+  arXiv:1712.03148 [astro-ph.CO].
+
+\bibitem{Feng:2018yew}
+  L.~Feng, Y.~H.~Li, F.~Yu, J.~F.~Zhang and X.~Zhang,
+  %``Exploring interacting holographic dark energy in a perturbed universe with parameterized post-Friedmann approach,''
+  arXiv:1807.03022 [astro-ph.CO].
+
+
+%\cite{Dossett:2014oia}
+\bibitem{Dossett:2014oia}
+  J.~Dossett, B.~Hu and D.~Parkinson,
+  %``Constraining models of f(R) gravity with Planck and WiggleZ power spectrum data,''
+  JCAP {\bf 1403}, 046 (2014).
+  %doi:10.1088/1475-7516/2014/03/046
+  %[arXiv:1401.3980 [astro-ph.CO]].
+  %%CITATION = doi:10.1088/1475-7516/2014/03/046;%%
+  %48 citations counted in INSPIRE as of 28 Aug 2018
+
+%\cite{Huang:2015wrx}
+\bibitem{Huang:2015wrx}
+  Q.~G.~Huang, K.~Wang and S.~Wang,
+  %``Constraints on the neutrino mass and mass hierarchy from cosmological observations,''
+  Eur.\ Phys.\ J.\ C {\bf 76}, no. 9, 489 (2016).
+  %doi:10.1140/epjc/s10052-016-4334-z
+  %[arXiv:1512.05899 [astro-ph.CO]].
+  %%CITATION = doi:10.1140/epjc/s10052-016-4334-z;%%
+  %31 citations counted in INSPIRE as of 28 Aug 2018
+
+%\cite{Wang:2016tsz}
+\bibitem{Wang:2016tsz}
+  S.~Wang, Y.~F.~Wang, D.~M.~Xia and X.~Zhang,
+  %``Impacts of dark energy on weighing neutrinos: mass hierarchies considered,''
+  Phys.\ Rev.\ D {\bf 94}, no. 8, 083519 (2016).
+  %doi:10.1103/PhysRevD.94.083519
+  %[arXiv:1608.00672 [astro-ph.CO]].
+  %%CITATION = doi:10.1103/PhysRevD.94.083519;%%
+  %23 citations counted in INSPIRE as of 28 Aug 2018
+
+
+%\cite{Zhao:2017jma}
+\bibitem{Zhao:2017jma}
+  M.~M.~Zhao, J.~F.~Zhang and X.~Zhang,
+  %``Measuring growth index in a universe with massive neutrinos: A revisit of the general relativity test with the latest observations,''
+  Phys.\ Lett.\ B {\bf 779}, 473 (2018).
+%  doi:10.1016/j.physletb.2018.02.042
+  %[arXiv:1710.02391 [astro-ph.CO]].
+  %%CITATION = doi:10.1016/j.physletb.2018.02.042;%%
+  %6 citations counted in INSPIRE as of 28 Aug 2018
+
+%\cite{Aghanim:2015xee}
+\bibitem{Aghanim:2015xee}
+  N.~Aghanim {\it et al.} [Planck Collaboration],
+  %``Planck 2015 results. XI. CMB power spectra, likelihoods, and robustness of parameters,''
+  Astron.\ Astrophys.\  {\bf 594}, A11 (2016).
+  %doi:10.1051/0004-6361/201526926
+  %[arXiv:1507.02704 [astro-ph.CO]].
+  %%CITATION = doi:10.1051/0004-6361/201526926;%%
+  %474 citations counted in INSPIRE as of 28 Aug 2018
+
+
+
+
+%\cite{Beutler:2011hx}
+\bibitem{Beutler:2011hx}
+  F.~Beutler {\it et al.},
+  %``The 6dF Galaxy Survey: Baryon Acoustic Oscillations and the Local Hubble Constant,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 416}, 3017 (2011).
+  %[arXiv:1106.3366 [astro-ph.CO]].
+  %%CITATION = ARXIV:1106.3366;%%
+  %465 citations counted in INSPIRE as of 31 Oct 2015
+
+%\cite{Ross:2014qpa}
+\bibitem{Ross:2014qpa}
+  A.~J.~Ross, L.~Samushia, C.~Howlett, W.~J.~Percival, A.~Burden and M.~Manera,
+  %``The clustering of the SDSS DR7 main Galaxy sample ? I. A 4 per cent distance measure at $z = 0.15$,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 449}, no. 1, 835 (2015).
+  %[arXiv:1409.3242 [astro-ph.CO]].
+  %%CITATION = ARXIV:1409.3242;%%
+  %48 citations counted in INSPIRE as of 31 Oct 2015
+
+\bibitem{Gil-Marin:2015nqa}
+  H.~Gil-Marin {\it et al.},
+  %``The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: BAO measurement from the LOS-dependent power spectrum of DR12 BOSS galaxies,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 460}, no. 4, 4210 (2016).
+  %doi:10.1093/mnras/stw1264
+  %[arXiv:1509.06373 [astro-ph.CO]].
+
+
+%\cite{Betoule:2014frx}
+\bibitem{Betoule:2014frx}
+  M.~Betoule {\it et al.} [SDSS Collaboration],
+  %``Improved cosmological constraints from a joint analysis of the SDSS-II and SNLS supernova samples,''
+  Astron.\ Astrophys.\  {\bf 568}, A22 (2014).
+  %[arXiv:1401.4064 [astro-ph.CO]].
+  %%CITATION = ARXIV:1401.4064;%%
+  %132 citations counted in INSPIRE as of 31 Oct 2015
+
+%\cite{Efstathiou:2013via}
+\bibitem{Efstathiou:2013via}
+  G.~Efstathiou,
+  %``H0 Revisited,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 440}, no. 2, 1138 (2014).
+  %[arXiv:1311.3461 [astro-ph.CO]].
+  %%CITATION = ARXIV:1311.3461;%%
+  %66 citations counted in INSPIRE as of 31 Oct 2015
+
+
+
+%\cite{Gil-Marin:2016wya}
+\bibitem{Gil-Marin:2016wya}
+  H.~Gil-Marin, W.~J.~Percival, L.~Verde, J.~R.~Brownstein, C.~H.~Chuang, F.~S.~Kitaura, S.~A.~Rodrguez-Torres and M.~D.~Olmstead,
+  %``The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the power spectrum and bispectrum of the DR12 BOSS galaxies,''
+  Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 465}, no. 2, 1757 (2017).
+  %doi:10.1093/mnras/stw2679
+  %[arXiv:1606.00439 [astro-ph.CO]].
+  %%CITATION = doi:10.1093/mnras/stw2679;%%
+  %22 citations counted in INSPIRE as of 20 Apr 2017
+
+
+%\cite{Ade:2015zua}
+\bibitem{Ade:2015zua}
+  P.~A.~R.~Ade {\it et al.} [Planck Collaboration],
+  %``Planck 2015 results. XV. Gravitational lensing,''
+  Astron.\ Astrophys.\  {\bf 594}, A15 (2016).
+ % doi:10.1051/0004-6361/201525941
+  %[arXiv:1502.01591 [astro-ph.CO]].
+  %%CITATION = doi:10.1051/0004-6361/201525941;%%
+  %318 citations counted in INSPIRE as of 01 Aug 2018
+
+
+%\cite{Lewis:2002ah}
+\bibitem{Lewis:2002ah}
+  A.~Lewis and S.~Bridle,
+  %``Cosmological parameters from CMB and other data: A Monte Carlo approach,''
+  Phys.\ Rev.\ D {\bf 66}, 103511 (2002).
+  %[astro-ph/0205436].
+  %%CITATION = ASTRO-PH/0205436;%%
+  %1661 citations counted in INSPIRE as of 31 Oct 2015
+
+%\cite{Renk:2017rzu}
+\bibitem{Renk:2017rzu}
+  J.~Renk, M.~Zumalacrregui, F.~Montanari and A.~Barreira,
+  %``Galileon gravity in light of ISW, CMB, BAO and H$_0$ data,''
+  JCAP {\bf 1710}, no. 10, 020 (2017)
+  %doi:10.1088/1475-7516/2017/10/020
+ % [arXiv:1707.02263 [astro-ph.CO]].
+  %%CITATION = doi:10.1088/1475-7516/2017/10/020;%%
+  %70 citations counted in INSPIRE as of 08 Aug 2019
+
+
+%\cite{Riess:2016jrr}
+\bibitem{Riess:2016jrr} 
+  A.~G.~Riess {\it et al.},
+  %``A 2.4% Determination of the Local Value of the Hubble Constant,''
+  Astrophys.\ J.\  {\bf 826}, no. 1, 56 (2016)
+  doi:10.3847/0004-637X/826/1/56
+  [arXiv:1604.01424 [astro-ph.CO]].
+  %%CITATION = doi:10.3847/0004-637X/826/1/56;%%
+  %921 citations counted in INSPIRE as of 12 Sep 2019
+
+
+\end{thebibliography}{}
+
+\end{document}
